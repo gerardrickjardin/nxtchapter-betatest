@@ -247,6 +247,7 @@ function initPageNavigation() {
 function initNavbar() {
   const header = document.getElementById('site-header');
   const mobileToggle = document.getElementById('mobile-toggle');
+  const mainNav = document.getElementById('main-nav');
 
   window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
@@ -256,9 +257,20 @@ function initNavbar() {
     }
   });
 
-  if (mobileToggle) {
+  if (mobileToggle && mainNav) {
     mobileToggle.addEventListener('click', () => {
-      showToast('Navigating NXT Chapter Sections...');
+      mobileToggle.classList.toggle('active');
+      mainNav.classList.toggle('mobile-active');
+      document.body.classList.toggle('menu-open');
+    });
+
+    const navLinks = mainNav.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        mainNav.classList.remove('mobile-active');
+        document.body.classList.remove('menu-open');
+      });
     });
   }
 }
