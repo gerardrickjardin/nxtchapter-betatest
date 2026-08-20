@@ -5763,49 +5763,91 @@ img {
 }
 
 /* ==========================================================================
-   ULTRA-SEAMLESS iOS & STRIPE-QUALITY MOBILE OPTIMIZATION
+   FLUID MOBILE RESPONSIVE SYSTEM — 320px → 768px
+   Spec: clamp() typography · 100dvh · overflow-x:hidden · 48px touch targets
    ========================================================================== */
 
-html, body {
+/* ── Viewport & Body Containment ──────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+html {
   overflow-x: hidden !important;
   max-width: 100vw !important;
   width: 100% !important;
-  min-height: 100vh !important;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  min-height: 100dvh !important;
   background-color: #0B0B14 !important;
 }
 
+/* ── Full-Bleed Section Backgrounds ─────────────────────────────────────────
+   Section backgrounds stretch 100% edge-to-edge.
+   Inner containers hold the 20px breathing room.
+   ────────────────────────────────────────────────────────────────────────── */
 @media (max-width: 768px) {
-  
-  /* 1. Full-Bleed Section Backgrounds (Stretches 100% Edge-to-Edge Across Mobile Screen) */
-  section, main, .page-container, .hero-section, .home-impact-section, .about-section, .departments-section, .skillvrse-section, .programs-split-section, .insight-section {
+
+  /* All sections: full-bleed background, no horizontal overflow */
+  section,
+  main,
+  .page-container,
+  .hero-section,
+  .home-impact-section,
+  .about-section,
+  .departments-section,
+  .skillvrse-section,
+  .programs-split-section,
+  .insight-section,
+  .news-section,
+  .contact-section {
     width: 100% !important;
     max-width: 100vw !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
-    box-sizing: border-box !important;
     overflow-x: hidden !important;
     background-size: cover !important;
+    background-attachment: scroll !important;
   }
 
-  /* 2. Inner Content Containers (20px Side Breathing Room Margins for Text, Cards & Buttons) */
-  .container, .hero-container, .home-impact-container, .about-container, .skillvrse-container, .stats-container {
+  /* Inner containers: constrained content with 20px gutters */
+  .container,
+  .hero-container,
+  .home-impact-container,
+  .about-container,
+  .skillvrse-container,
+  .stats-container,
+  .page-content,
+  .section-inner {
     width: 100% !important;
     max-width: 100% !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    box-sizing: border-box !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
 
-  /* 3. Top Header & Glass Hamburger Navigation Drawer */
+  /* Prevent any absolute/SVG/canvas element from bleeding horizontally */
+  img, svg, canvas, video, iframe {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* ── Header & Hamburger Nav ──────────────────────────────────────────────── */
   .site-header {
     padding: 10px 20px !important;
     width: 100vw !important;
-    box-sizing: border-box !important;
     backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
   }
 
   .header-container {
@@ -5813,7 +5855,6 @@ html, body {
     justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
-    max-width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
   }
@@ -5827,14 +5868,19 @@ html, body {
     display: none !important;
   }
 
+  /* 48×48px touch target for hamburger */
   .mobile-toggle {
     display: flex !important;
     flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
     gap: 5px !important;
     background: transparent !important;
     border: none !important;
     cursor: pointer !important;
-    padding: 6px !important;
+    min-width: 48px !important;
+    min-height: 48px !important;
+    padding: 12px 8px !important;
   }
 
   .mobile-toggle .bar {
@@ -5842,14 +5888,16 @@ html, body {
     height: 2px !important;
     background-color: #FFFFFF !important;
     transition: all 0.3s ease !important;
+    display: block !important;
   }
 
+  /* Full-screen mobile nav drawer */
   .main-nav {
     position: fixed !important;
     top: 58px !important;
     left: 0 !important;
     width: 100vw !important;
-    height: calc(100vh - 58px) !important;
+    height: calc(100dvh - 58px) !important;
     background: #0B0B14 !important;
     flex-direction: column !important;
     padding: 24px 20px !important;
@@ -5857,7 +5905,6 @@ html, body {
     overflow-y: auto !important;
     z-index: 9999 !important;
     border-top: 1px solid rgba(124, 58, 237, 0.3) !important;
-    box-sizing: border-box !important;
   }
 
   .main-nav.mobile-active {
@@ -5867,14 +5914,18 @@ html, body {
   .nav-list {
     flex-direction: column !important;
     width: 100% !important;
-    gap: 14px !important;
+    gap: 0 !important;
     align-items: flex-start !important;
   }
 
+  /* 48px touch area on each nav link */
   .nav-link {
     font-size: 1.1rem !important;
-    padding: 12px 0 !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
     width: 100% !important;
+    padding: 0 0 !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   }
 
@@ -5882,7 +5933,7 @@ html, body {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    gap: 10px !important;
+    gap: 12px !important;
     margin-top: 24px !important;
     padding-top: 20px !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
@@ -5890,12 +5941,16 @@ html, body {
 
   .mobile-drawer-cta-group .capsule-btn {
     width: 100% !important;
+    min-height: 48px !important;
     padding: 12px 16px !important;
     font-size: 0.88rem !important;
     background: rgba(124, 58, 237, 0.25) !important;
     border: 1px solid rgba(124, 58, 237, 0.5) !important;
     text-align: center !important;
     border-radius: 999px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .mobile-drawer-cta-group .donate-pill-btn {
@@ -5904,13 +5959,12 @@ html, body {
     font-weight: 800 !important;
   }
 
-  /* 3. Announcement Banner */
+  /* ── Announcement Banner ─────────────────────────────────────────────────── */
   .top-stronger-together-banner {
     padding: 8px 16px !important;
     overflow: hidden !important;
     width: 100% !important;
     max-width: 100vw !important;
-    box-sizing: border-box !important;
   }
 
   .banner-flex-row {
@@ -5920,36 +5974,40 @@ html, body {
   }
 
   .stronger-together-title-clean {
-    font-size: 0.78rem !important;
+    font-size: clamp(0.65rem, 2.5vw, 0.8rem) !important;
     font-weight: 800 !important;
     letter-spacing: 0.04em !important;
   }
 
   .single-line-announcement {
-    font-size: 0.72rem !important;
+    font-size: clamp(0.6rem, 2.2vw, 0.74rem) !important;
     line-height: 1.4 !important;
     white-space: normal !important;
     word-break: break-word !important;
+    overflow-wrap: break-word !important;
     display: block !important;
     text-align: center !important;
   }
 
-  /* 4. Organic Hero Section Flow */
+  /* ── Hero Section ────────────────────────────────────────────────────────── */
   .hero-section {
-    padding: 28px 0 40px 0 !important;
+    padding: clamp(1.5rem, 5vw, 2rem) 0 clamp(2rem, 6vw, 3rem) 0 !important;
+    min-height: auto !important;
   }
 
   .hero-container {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    box-sizing: border-box !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
   }
 
   .hero-text {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
+    order: 1 !important;
   }
 
   .hero-title {
@@ -5960,18 +6018,20 @@ html, body {
     margin-bottom: 0 !important;
   }
 
+  /* Fluid title sizes: never clip, never overflow */
   .hero-title .title-top {
-    font-size: 1.55rem !important;
+    font-size: clamp(1.25rem, 5vw, 1.6rem) !important;
     font-weight: 800 !important;
     letter-spacing: 0.02em !important;
     display: block !important;
     word-break: break-word !important;
+    overflow-wrap: break-word !important;
     width: 100% !important;
-    line-height: 1.25 !important;
+    line-height: 1.2 !important;
   }
 
   .hero-title .title-bottom {
-    font-size: 2.25rem !important;
+    font-size: clamp(1.6rem, 6.5vw, 2.4rem) !important;
     font-weight: 900 !important;
     line-height: 1.15 !important;
     letter-spacing: 0.01em !important;
@@ -5979,6 +6039,7 @@ html, body {
     word-break: break-word !important;
     overflow-wrap: break-word !important;
     width: 100% !important;
+    max-width: 100% !important;
     color: #00F0FF !important;
     text-shadow: 0 0 20px rgba(0, 240, 255, 0.4) !important;
     margin-top: 6px !important;
@@ -5990,11 +6051,13 @@ html, body {
 
   .hero-subtitle {
     order: 2 !important;
-    font-size: 0.95rem !important;
+    font-size: clamp(0.85rem, 3vw, 1rem) !important;
     line-height: 1.65 !important;
     width: 100% !important;
-    margin: 14px 0 20px 0 !important;
+    max-width: 100% !important;
+    margin: clamp(0.75rem, 3vw, 1rem) 0 clamp(1rem, 4vw, 1.5rem) 0 !important;
     word-break: break-word !important;
+    overflow-wrap: break-word !important;
     color: #CBD5E1 !important;
   }
 
@@ -6002,59 +6065,75 @@ html, body {
     display: none !important;
   }
 
+  /* Carousel: below subtitle */
   .hero-image-wrapper {
     order: 3 !important;
     width: 100% !important;
-    margin: 0 0 20px 0 !important;
+    max-width: 100% !important;
+    margin: 0 0 clamp(1rem, 4vw, 1.5rem) 0 !important;
   }
 
   .hero-slideshow-container {
-    height: 230px !important;
+    height: clamp(180px, 45vw, 260px) !important;
     width: 100% !important;
     max-width: 100% !important;
     border-radius: 20px !important;
-    margin-top: 0 !important;
     overflow: hidden !important;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .hero-slideshow-container img,
+  .hero-slideshow-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    max-width: 100% !important;
   }
 
   .arrow-accent {
     display: none !important;
   }
 
+  /* CTA buttons: full-width pill, 48px touch height */
   .hero-cta-group {
     order: 4 !important;
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    gap: 12px !important;
+    gap: clamp(0.6rem, 2.5vw, 1rem) !important;
   }
 
   .hero-cta-group .btn {
     width: 100% !important;
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
     justify-content: center !important;
     box-sizing: border-box !important;
-    font-size: 0.88rem !important;
-    padding: 14px 20px !important;
+    font-size: clamp(0.82rem, 2.8vw, 0.95rem) !important;
+    padding: 12px 20px !important;
     border-radius: 999px !important;
   }
 
-  /* 5. Seamless Impact Pill Capsules */
+  /* ── Impact Pill Capsules ────────────────────────────────────────────────── */
   .home-impact-section {
-    padding: 44px 0 56px 0 !important;
+    padding: clamp(2rem, 6vw, 3rem) 0 clamp(2.5rem, 8vw, 4rem) 0 !important;
   }
 
   .home-impact-header {
-    margin-bottom: 28px !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
+    margin-bottom: clamp(1.25rem, 4vw, 2rem) !important;
   }
 
   .home-impact-title {
-    font-size: 2.2rem !important;
+    font-size: clamp(1.6rem, 6vw, 2.2rem) !important;
     letter-spacing: 0.04em !important;
+    word-break: break-word !important;
   }
 
   .home-impact-intro {
-    font-size: 0.95rem !important;
+    font-size: clamp(0.85rem, 3vw, 1rem) !important;
     line-height: 1.65 !important;
   }
 
@@ -6063,7 +6142,9 @@ html, body {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    gap: 20px !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
+    gap: clamp(1rem, 4vw, 1.5rem) !important;
   }
 
   .impact-pill-card {
@@ -6071,39 +6152,42 @@ html, body {
     max-width: 100% !important;
     min-height: auto !important;
     height: auto !important;
-    border-radius: 40px !important;
-    padding: 32px 24px 36px 24px !important;
+    border-radius: 36px !important;
+    padding: clamp(1.5rem, 5vw, 2rem) clamp(1rem, 4vw, 1.5rem) clamp(1.75rem, 6vw, 2.25rem) !important;
     box-sizing: border-box !important;
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
   }
 
   .pill-stat-circle {
-    width: 104px !important;
-    height: 104px !important;
+    width: clamp(80px, 22vw, 110px) !important;
+    height: clamp(80px, 22vw, 110px) !important;
     margin-top: 0 !important;
-    margin-bottom: 18px !important;
+    margin-bottom: clamp(0.75rem, 3vw, 1.25rem) !important;
   }
 
   .pill-stat-circle .impact-percent {
-    font-size: 2.4rem !important;
+    font-size: clamp(1.6rem, 5vw, 2.4rem) !important;
   }
 
   .pill-card-text {
-    font-size: 0.92rem !important;
+    font-size: clamp(0.82rem, 2.8vw, 0.95rem) !important;
     line-height: 1.6 !important;
-    padding: 0 6px !important;
+    padding: 0 clamp(0.25rem, 1vw, 0.5rem) !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
   }
 
-  /* 6. Seamless "OUR MISSION" & "GET TO KNOW US" Cards */
+  /* ── About / Our Mission & Get To Know Us ────────────────────────────────── */
   .about-section {
-    padding: 44px 0 !important;
+    padding: clamp(2rem, 6vw, 3rem) 0 !important;
   }
 
   .about-container {
     display: flex !important;
     flex-direction: column !important;
-    gap: 24px !important;
-    padding: 0 !important;
+    gap: clamp(1rem, 4vw, 1.5rem) !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
   }
 
   .about-left {
@@ -6112,18 +6196,18 @@ html, body {
   }
 
   .about-text-body {
-    font-size: 0.95rem !important;
+    font-size: clamp(0.85rem, 3vw, 1rem) !important;
     line-height: 1.7 !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
-    margin-bottom: 20px !important;
+    margin-bottom: clamp(1rem, 4vw, 1.5rem) !important;
     color: #CBD5E1 !important;
   }
 
   .about-right {
     order: 2 !important;
     width: 100% !important;
-    margin-top: 4px !important;
+    margin-top: 0 !important;
   }
 
   .know-us-card {
@@ -6131,7 +6215,7 @@ html, body {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    padding: 28px 24px !important;
+    padding: clamp(1.25rem, 5vw, 1.75rem) clamp(1rem, 5vw, 1.5rem) !important;
     border-radius: 24px !important;
     overflow: hidden !important;
     margin: 0 !important;
@@ -6140,48 +6224,56 @@ html, body {
 
   .know-us-card .crosshatch-accent {
     position: absolute !important;
-    top: 14px !important;
-    right: 14px !important;
-    font-size: 1.6rem !important;
+    top: 12px !important;
+    right: 12px !important;
+    font-size: clamp(1.2rem, 3.5vw, 1.6rem) !important;
     letter-spacing: 2px !important;
   }
 
   .know-us-title .know-top {
-    font-size: 2.1rem !important;
-  }
-
-  .know-us-title .know-bottom {
-    font-size: 2.75rem !important;
-  }
-
-  .know-us-desc {
-    font-size: 0.92rem !important;
-    line-height: 1.65 !important;
+    font-size: clamp(1.5rem, 5.5vw, 2.1rem) !important;
     word-break: break-word !important;
   }
 
-  /* 7. Seamless Program & Department Cards */
+  .know-us-title .know-bottom {
+    font-size: clamp(2rem, 7vw, 2.75rem) !important;
+    word-break: break-word !important;
+  }
+
+  .know-us-desc {
+    font-size: clamp(0.82rem, 3vw, 0.95rem) !important;
+    line-height: 1.65 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
+  /* ── Programs & Department Cards ─────────────────────────────────────────── */
   .programs-split-section {
-    padding: 40px 0 !important;
+    padding: clamp(2rem, 6vw, 2.5rem) 0 !important;
   }
 
   .program-split-row {
     flex-direction: column !important;
-    gap: 18px !important;
+    gap: clamp(1rem, 4vw, 1.25rem) !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
   }
 
-  .program-hero-card, .program-graphic-card {
-    padding: 24px 20px !important;
+  .program-hero-card,
+  .program-graphic-card {
+    padding: clamp(1.25rem, 5vw, 1.5rem) clamp(1rem, 4vw, 1.25rem) !important;
     border-radius: 20px !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
   }
 
   .program-spaced-title {
-    font-size: 1.6rem !important;
+    font-size: clamp(1.25rem, 5vw, 1.6rem) !important;
+    word-break: break-word !important;
   }
 
-  /* 8. Responsive YouTube Video Wrappers */
+  /* ── YouTube Embed (Aspect-Ratio Locked) ─────────────────────────────────── */
   .insight-video-wrapper {
     position: relative !important;
     padding-bottom: 56.25% !important;
@@ -6189,6 +6281,8 @@ html, body {
     overflow: hidden !important;
     border-radius: 20px !important;
     box-shadow: 0 12px 30px rgba(0,0,0,0.5) !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .insight-video-wrapper iframe {
@@ -6197,63 +6291,84 @@ html, body {
     left: 0 !important;
     width: 100% !important;
     height: 100% !important;
+    border: none !important;
   }
 
-  /* 9. News & Events 5-Tab Bar */
+  /* ── News & Events Tab Bar ───────────────────────────────────────────────── */
   .news-tabs-nav {
     display: flex !important;
     overflow-x: auto !important;
-    white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
+    white-space: nowrap !important;
     padding-bottom: 8px !important;
     gap: 8px !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
+    scrollbar-width: none !important;
   }
 
+  .news-tabs-nav::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  /* 48px touch targets on tab buttons */
   .news-tab-btn {
     flex-shrink: 0 !important;
-    font-size: 0.85rem !important;
-    padding: 8px 16px !important;
+    font-size: clamp(0.78rem, 2.8vw, 0.9rem) !important;
+    min-height: 48px !important;
+    padding: 0 16px !important;
     border-radius: 999px !important;
+    display: inline-flex !important;
+    align-items: center !important;
   }
 
-  /* 10. Department Cards Grid */
-  .departments-grid, .departments-page-grid {
+  /* ── Department Cards ────────────────────────────────────────────────────── */
+  .departments-grid,
+  .departments-page-grid {
     grid-template-columns: 1fr !important;
-    gap: 16px !important;
+    gap: clamp(0.75rem, 3vw, 1rem) !important;
+    padding-left: clamp(1rem, 5vw, 1.5rem) !important;
+    padding-right: clamp(1rem, 5vw, 1.5rem) !important;
   }
 
   .dept-card {
-    padding: 22px 18px !important;
+    padding: clamp(1rem, 4vw, 1.5rem) clamp(0.875rem, 3.5vw, 1.25rem) !important;
     border-radius: 20px !important;
     width: 100% !important;
     box-sizing: border-box !important;
   }
 
   .dept-title {
-    font-size: 1.15rem !important;
+    font-size: clamp(1rem, 4vw, 1.2rem) !important;
+    word-break: break-word !important;
   }
 
   .dept-desc {
-    font-size: 0.9rem !important;
+    font-size: clamp(0.8rem, 2.8vw, 0.95rem) !important;
     line-height: 1.6 !important;
+    word-break: break-word !important;
   }
 
-  /* 11. Forms, Inputs & Modals */
+  /* ── Modals, Forms, Inputs ───────────────────────────────────────────────── */
   .modal-content {
     width: 92% !important;
-    padding: 24px 20px !important;
+    max-width: 100% !important;
+    padding: clamp(1.25rem, 5vw, 1.5rem) clamp(1rem, 4vw, 1.25rem) !important;
     border-radius: 20px !important;
-    max-height: 88vh !important;
+    max-height: 88dvh !important;
+    overflow-y: auto !important;
   }
 
-  input, select, textarea {
+  /* Prevent iOS auto-zoom on inputs (font-size >= 16px) */
+  input,
+  select,
+  textarea {
     font-size: 16px !important;
+    max-width: 100% !important;
   }
 
   .insight-form-grid {
     grid-template-columns: 1fr !important;
-    gap: 14px !important;
+    gap: clamp(0.75rem, 3vw, 1rem) !important;
   }
 }
-
-
