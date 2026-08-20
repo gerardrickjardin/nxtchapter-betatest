@@ -5577,3 +5577,156 @@ img {
   }
 }
 
+/* ==========================================================================
+   ON-BRAND IMPACT PILL SECTION (HERO PAGE REPLACEMENT)
+   ========================================================================== */
+
+.home-impact-section {
+  position: relative;
+  background: #0B0B14;
+  padding: 90px 0 110px 0;
+  border-top: 1px solid rgba(124, 58, 237, 0.25);
+  border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+  overflow: hidden;
+}
+
+.home-impact-section::before {
+  content: '';
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.18) 0%, rgba(0, 240, 255, 0.05) 50%, transparent 70%);
+  pointer-events: none;
+}
+
+.home-impact-header {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 60px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.home-impact-title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  margin: 12px 0 20px 0;
+  text-transform: uppercase;
+  text-shadow: 0 0 30px rgba(124, 58, 237, 0.4);
+}
+
+.home-impact-intro {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #CBD5E1;
+  font-weight: 400;
+}
+
+.impact-pills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  position: relative;
+  z-index: 2;
+}
+
+.impact-pill-card {
+  border-radius: 999px;
+  padding: 52px 32px 64px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Pill Theme Variations */
+.pill-theme-dark-purple {
+  background: linear-gradient(180deg, #1B172C 0%, #0E0C18 100%);
+  border: 1.5px solid rgba(124, 58, 237, 0.45);
+}
+
+.pill-theme-dark-teal {
+  background: linear-gradient(180deg, #112824 0%, #0A1614 100%);
+  border: 1.5px solid rgba(16, 185, 129, 0.45);
+}
+
+.pill-theme-slate-glow {
+  background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
+  border: 1.5px solid rgba(56, 189, 248, 0.4);
+}
+
+.impact-pill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(124, 58, 237, 0.35), 0 0 30px rgba(0, 240, 255, 0.25);
+}
+
+.pill-stat-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2.5px solid rgba(255, 255, 255, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease;
+}
+
+.impact-pill-card:hover .pill-stat-circle {
+  transform: scale(1.08);
+  border-color: #FFFFFF;
+}
+
+.pill-stat-circle .impact-percent {
+  font-size: 3.4rem;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.pill-card-text {
+  font-size: 0.96rem;
+  line-height: 1.65;
+  color: #E2E8F0;
+  font-weight: 400;
+  padding: 0 8px;
+}
+
+.pill-card-text strong {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .impact-pills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .impact-pills-grid {
+    grid-template-columns: 1fr;
+  }
+  .impact-pill-card {
+    border-radius: 60px;
+    padding: 44px 24px;
+  }
+  .home-impact-title {
+    font-size: 2.5rem;
+  }
+}
+
+
