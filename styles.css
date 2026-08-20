@@ -5944,7 +5944,7 @@ html, body {
 
   .hero-title {
     order: 1 !important;
-    font-size: 1.55rem !important;
+    font-size: 1.65rem !important;
     line-height: 1.25 !important;
     width: 100% !important;
     max-width: 100% !important;
@@ -5953,7 +5953,7 @@ html, body {
   }
 
   .hero-title .title-top {
-    font-size: 1.55rem !important;
+    font-size: 1.65rem !important;
     letter-spacing: 0.02em !important;
     display: block !important;
     word-break: break-word !important;
@@ -5961,13 +5961,17 @@ html, body {
   }
 
   .hero-title .title-bottom {
-    font-size: 1.65rem !important;
+    font-size: 2.45rem !important; /* Enlarged, high-impact tagline! */
+    line-height: 1.15 !important;
     letter-spacing: 0.01em !important;
     display: block !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
     width: 100% !important;
     max-width: 100% !important;
+    color: #00F0FF !important;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4) !important;
+    margin-top: 4px !important;
   }
 
   .brush-underline {
@@ -5976,8 +5980,8 @@ html, body {
 
   .hero-subtitle {
     order: 2 !important;
-    font-size: 0.9rem !important;
-    line-height: 1.55 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
     width: 100% !important;
     max-width: 100% !important;
     margin: 14px 0 16px 0 !important;
@@ -6093,6 +6097,13 @@ html, body {
     width: 100% !important;
   }
 
+  .about-text-body {
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
+    word-break: break-word !important;
+    overflow-wrap: break-word !important;
+  }
+
   .about-right {
     order: 2 !important;
     width: 100% !important;
@@ -6100,10 +6111,36 @@ html, body {
   }
 
   .know-us-card {
+    transform: none !important; /* Remove rotation tilt on mobile so card fits 100% inside screen */
     width: 100% !important;
+    max-width: 100% !important;
     box-sizing: border-box !important;
-    padding: 24px 20px !important;
-    border-radius: 20px !important;
+    padding: 28px 18px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+  }
+
+  .know-us-card .crosshatch-accent {
+    position: absolute !important;
+    top: 10px !important;
+    right: 12px !important;
+    font-size: 1.6rem !important;
+    letter-spacing: 2px !important;
+  }
+
+  .know-us-title .know-top {
+    font-size: 2.1rem !important;
+  }
+
+  .know-us-title .know-bottom {
+    font-size: 2.8rem !important;
+  }
+
+  .know-us-desc {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+    word-break: break-word !important;
   }
 
   /* 6. Split Programs Page (SEED & Youth) */
