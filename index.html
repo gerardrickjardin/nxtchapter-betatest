@@ -1,0 +1,2324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXT Chapter | Building Futures Empowering Communities</title>
+  <meta name="description" content="NXT Chapter equips people with resources, connections, and opportunities for successful reentry, mentorship, workforce placement, SkillVRse training, and community strength.">
+  
+  <!-- Google Fonts: Inter for clean UI, Caveat & Permanent Marker for urban brush fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Banner: Stronger Together -->
+  <div class="top-stronger-together-banner">
+    <div class="stronger-together-single-line">
+      <span class="stronger-together-title-clean">Stronger Together</span>
+      <p class="single-line-announcement">
+        Nxt Chapter is now partnering with the Denver Municipal Court, the Public Defender’s Office, and Denver Public Schools, where our peer navigators provide peer support services.
+      </p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo on Far Left -->
+      <a href="#home" class="brand-logo left-logo" aria-label="NXT Chapter Home">
+        <img src="assets/NXT Chapter Logo.png" alt="NXT Chapter Logo" class="brand-logo-img">
+      </a>
+
+      <!-- Combined Navigation Items -->
+      <nav class="main-nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          
+          <!-- Programs Link with Interactive Mega Dropdown -->
+          <li class="nav-dropdown-wrap programs-dropdown-wrap">
+            <a href="#programs" class="nav-link dropdown-toggle">Programs <span class="dropdown-arrow">&#9662;</span></a>
+            
+            <div class="programs-mega-dropdown">
+              <!-- Dual Tab Header Bar -->
+              <div class="impact-dropdown-tabs-bar">
+                <button type="button" class="impact-tab-head active-purple" id="drop-tab-program-seed" onclick="switchProgramsDropdownTab('seed', event)">
+                  S.E.E.D Program (Adult Reentry)
+                </button>
+                <button type="button" class="impact-tab-head inactive-teal" id="drop-tab-program-youth" onclick="switchProgramsDropdownTab('youth', event)">
+                  Youth Program
+                </button>
+              </div>
+
+              <!-- PANE 1: S.E.E.D PROGRAM -->
+              <div class="impact-tab-pane active" id="pane-program-seed">
+                <div class="impact-dropdown-body-grid">
+                  <!-- Left Dark Charcoal Container -->
+                  <div class="impact-dark-left-card">
+                    <div class="impact-avatar-wrap">
+                      <img src="assets/seed_group_table.png" alt="S.E.E.D Program Adult Reentry" class="impact-avatar-img">
+                    </div>
+                    <div class="impact-left-text">
+                      <h4 class="impact-left-title">S.E.E.D Program<br>(Adult Reentry)</h4>
+                      <p class="impact-left-subtitle">Support, Empowerment, Education, and Development for formerly incarcerated adults.</p>
+                    </div>
+                  </div>
+
+                  <!-- Right White Container with Dark Learn More Button -->
+                  <div class="impact-white-right-card">
+                    <a href="#programs" class="btn-dark-learn" onclick="switchProgramTab('seed')">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PANE 2: YOUTH PROGRAM -->
+              <div class="impact-tab-pane" id="pane-program-youth">
+                <div class="impact-dropdown-body-grid">
+                  <!-- Left Teal/Slate Container -->
+                  <div class="impact-teal-left-card">
+                    <div class="impact-avatar-wrap">
+                      <img src="assets/youth_girls.png" alt="Youth Program Mentorship" class="impact-avatar-img">
+                    </div>
+                    <div class="impact-left-text">
+                      <h4 class="impact-left-title">Youth Program</h4>
+                      <p class="impact-left-subtitle">Early intervention and mentorship for at-risk youth to promote growth and education.</p>
+                    </div>
+                  </div>
+
+                  <!-- Right White Container with Dark Learn More Button -->
+                  <div class="impact-white-right-card">
+                    <a href="#programs" class="btn-dark-learn" onclick="switchProgramTab('youth')">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </li>
+
+          <!-- Impact Link with Interactive Mega Dropdown -->
+          <li class="nav-dropdown-wrap impact-dropdown-wrap">
+            <a href="#impact" class="nav-link dropdown-toggle">Impact <span class="dropdown-arrow">&#9662;</span></a>
+            
+            <div class="impact-mega-dropdown">
+              <!-- Dual Tab Header Bar -->
+              <div class="impact-dropdown-tabs-bar">
+                <button type="button" class="impact-tab-head active-purple" id="drop-tab-impact" onclick="switchImpactDropdownTab('impact', event)">
+                  Impact
+                </button>
+                <button type="button" class="impact-tab-head inactive-teal" id="drop-tab-testimonials" onclick="switchImpactDropdownTab('testimonials', event)">
+                  Testimonials
+                </button>
+              </div>
+
+              <!-- PANE 1: IMPACT -->
+              <div class="impact-tab-pane active" id="pane-impact">
+                <div class="impact-dropdown-body-grid">
+                  <!-- Left Dark Charcoal Container -->
+                  <div class="impact-dark-left-card">
+                    <div class="impact-avatar-wrap">
+                      <img src="assets/seed_group_table.png" alt="NXT Chapter Community Team" class="impact-avatar-img">
+                    </div>
+                    <div class="impact-left-text">
+                      <h4 class="impact-left-title">Real Change Real Stories<br>Real Impact</h4>
+                      <p class="impact-left-subtitle">Together, we're transforming lives and building brighter futures.</p>
+                    </div>
+                  </div>
+
+                  <!-- Right White Container with Dark Learn More Button -->
+                  <div class="impact-white-right-card">
+                    <a href="#impact" class="btn-dark-learn">Learn More</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- PANE 2: TESTIMONIALS -->
+              <div class="impact-tab-pane" id="pane-testimonials">
+                <div class="impact-dropdown-body-grid">
+                  <!-- Left Teal/Slate Container -->
+                  <div class="impact-teal-left-card">
+                    <div class="impact-avatar-wrap">
+                      <img src="assets/seed_counseling.png" alt="NXT Participant Testimonial" class="impact-avatar-img">
+                    </div>
+                    <div class="impact-left-text">
+                      <h4 class="impact-left-title">Participant Voices</h4>
+                      <p class="impact-left-subtitle">"NxtChapter showed me how to believe in myself and gave me the tools to move forward." — Marcus L.</p>
+                    </div>
+                  </div>
+
+                  <!-- Right White Container with Dark Read Testimonials Button -->
+                  <div class="impact-white-right-card">
+                    <a href="#impact" class="btn-dark-learn">Read Testimonials</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </li>
+
+          <!-- News & Events Link with Interactive Mega Dropdown -->
+          <li class="nav-dropdown-wrap news-dropdown-wrap">
+            <a href="#news" class="nav-link dropdown-toggle">News &amp; Events <span class="dropdown-arrow">&#9662;</span></a>
+            
+            <div class="news-mega-dropdown">
+              <!-- Top Purple Bar -->
+              <div class="news-dropdown-top-bar">
+                <h3>News and Events</h3>
+              </div>
+
+              <!-- Body Grid: Left Dark Charcoal + Right White with Illustration -->
+              <div class="news-dropdown-body-grid">
+                <!-- Left Dark Charcoal Container -->
+                <div class="news-dark-left-card">
+                  <p class="news-left-paragraph">
+                    Stay up to date with NxtChapter's latest events, community initiatives, and important updates. From workshops and outreach programs to success stories and news highlights — this is where progress meets purpose.
+                  </p>
+                  <a href="#news" class="btn-white-learn">Learn More</a>
+                </div>
+
+                <!-- Right White Container with Newspaper & Coffee Doodle -->
+                <div class="news-white-right-card">
+                  <img src="assets/news_coffee.png" alt="News and Events Coffee Illustration" class="news-coffee-img">
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Departments Link with Interactive Mega Dropdown -->
+          <li class="nav-dropdown-wrap departments-dropdown-wrap">
+            <a href="#departments" class="nav-link dropdown-toggle">Departments <span class="dropdown-arrow">&#9662;</span></a>
+            
+            <div class="departments-mega-dropdown">
+              <div class="dept-dropdown-body-grid">
+                
+                <!-- Left Side Content Container -->
+                <div class="dept-left-card">
+                  <h3 class="dept-dropdown-title">Behind the Work: Our People</h3>
+                  <p class="dept-purple-paragraph">
+                    NxtChapter is powered by a dedicated team across key departments focused on reentry, recovery, youth development, and community outreach. Each member brings passion, expertise, and lived experience to ensure lasting impact. Together, we build pathways to opportunity, healing, and second chances.
+                  </p>
+                  <a href="#departments" class="btn-navy-learn">Learn More</a>
+                </div>
+
+                <!-- Right Side Image Container -->
+                <div class="dept-right-card">
+                  <img src="assets/seed_group_table.png" alt="NXT Chapter Team Meeting" class="dept-team-img">
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#skillvrse" class="nav-link">SkillVRse</a></li>
+          <li><a href="#insight" class="nav-link">INSiGHT</a></li>
+
+          <!-- About Us Link with Interactive Mega Dropdown -->
+          <li class="nav-dropdown-wrap about-dropdown-wrap">
+            <a href="#about" class="nav-link dropdown-toggle">About Us <span class="dropdown-arrow">&#9662;</span></a>
+            
+            <div class="about-mega-dropdown">
+              <div class="about-dropdown-body-grid">
+                
+                <!-- Left Side Stacked Purple Title & Learn More Button -->
+                <div class="about-left-card">
+                  <h3 class="about-stacked-title">
+                    <span class="title-purple font-bold">OUR</span><br>
+                    <span class="title-purple font-bold">MISSION,</span><br>
+                    <span class="title-purple font-bold">OUR</span><br>
+                    <span class="title-purple font-bold">MOVEMENT</span>
+                  </h3>
+                  <a href="#about" class="btn-dark-learn">Learn More</a>
+                </div>
+
+                <!-- Center Text Paragraph -->
+                <div class="about-center-card">
+                  <p class="about-narrative-p">
+                    NxtChapter is committed to breaking the cycle of incarceration through reentry support, youth empowerment, and community engagement. Our mission is rooted in second chances, personal growth, and building pathways to long-term success.
+                  </p>
+                </div>
+
+                <!-- Right Side Team Photo Banner -->
+                <div class="about-right-card">
+                  <img src="assets/NXT Team Photo.png" alt="NxtChapter Team Photo" class="about-team-img">
+                </div>
+
+              </div>
+            </div>
+          </li>
+
+          <!-- Contact Us Link with Interactive Mega Dropdown -->
+          <li class="nav-dropdown-wrap contact-dropdown-wrap">
+            <a href="#contact" class="nav-link dropdown-toggle">Contact Us <span class="dropdown-arrow">&#9662;</span></a>
+            
+            <div class="contact-mega-dropdown">
+              <div class="contact-dropdown-body-grid">
+                
+                <!-- Left Side Bold Heading & Learn More Button -->
+                <div class="contact-left-card">
+                  <h3 class="contact-purple-title">GET IN TOUCH</h3>
+                  <a href="#contact" class="btn-teal-learn">Learn More</a>
+                </div>
+
+                <!-- Right Side Text Paragraph -->
+                <div class="contact-right-card">
+                  <p class="contact-narrative-p">
+                    Do you have questions or would you like to get involved? We'd love to hear from you. Reach out to learn more about our programs, partnerships, or how to support NxtChapter's mission.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Purple Capsule CTA Pill Button Group -->
+      <div class="header-actions">
+        <div class="purple-capsule-bar">
+          <button class="capsule-btn" onclick="openModal('youth-modal')">Youth Registration</button>
+          <button class="capsule-btn" onclick="openModal('adult-modal')">Adult Registration</button>
+          <button class="capsule-btn" onclick="openModal('referral-modal')">Referral</button>
+          <button class="capsule-btn donate-pill-btn" onclick="openModal('donate-modal')">Donate</button>
+        </div>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE 1: HOME -->
+    <div class="page-container active" id="page-home">
+<!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-accent"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-top">BUILDING FUTURES</span>
+            <span class="title-bottom">
+              EMPOWERING COMMUNITIES
+              <svg class="brush-underline" viewBox="0 0 500 24" fill="none" preserveAspectRatio="none">
+                <path d="M5 18 C 120 4, 340 22, 495 10" stroke="#7C3AED" stroke-width="8" stroke-linecap="round"/>
+                <path d="M20 20 C 150 8, 380 20, 480 14" stroke="#00F0FF" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </span>
+          </h1>
+
+          <p class="hero-subtitle">
+            The NXT Chapter equips people with resources, connections, and opportunities<br>to help them take their next step toward a better future.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn btn-primary btn-icon" onclick="openModal('mission-modal')" id="hero-mission-btn">
+              LEARN OUR MISSION
+              <span class="icon-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </span>
+            </button>
+            <button class="btn btn-outline" onclick="openModal('story-modal')" id="hero-story-btn">OUR STORY</button>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="hero-slideshow-container" id="hero-slideshow">
+            
+            <!-- Slides from NXT Hero Section Photos (1.png through 12.png) -->
+            <div class="hero-slide active">
+              <img src="assets/NXT%20Hero%20Section%20Photos/1.png" alt="NXT Chapter Community & Mentorship 1" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/2.png" alt="NXT Chapter Community & Mentorship 2" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/3.png" alt="NXT Chapter Community & Mentorship 3" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/4.png" alt="NXT Chapter Community & Mentorship 4" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/5.png" alt="NXT Chapter Community & Mentorship 5" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/6.png" alt="NXT Chapter Community & Mentorship 6" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/7.png" alt="NXT Chapter Community & Mentorship 7" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/8.png" alt="NXT Chapter Community & Mentorship 8" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/9.png" alt="NXT Chapter Community & Mentorship 9" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/10.png" alt="NXT Chapter Community & Mentorship 10" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/11.png" alt="NXT Chapter Community & Mentorship 11" class="hero-img">
+            </div>
+            <div class="hero-slide">
+              <img src="assets/NXT%20Hero%20Section%20Photos/12.png" alt="NXT Chapter Community & Mentorship 12" class="hero-img">
+            </div>
+
+            <!-- Slideshow Controls -->
+            <button class="hero-slide-nav prev-slide" onclick="moveHeroSlide(-1)" aria-label="Previous Slide">&lsaquo;</button>
+            <button class="hero-slide-nav next-slide" onclick="moveHeroSlide(1)" aria-label="Next Slide">&rsaquo;</button>
+
+            <!-- Slide Indicator Dots Bar -->
+            <div class="hero-slide-dots" id="hero-slide-dots">
+              <button class="hero-dot active" onclick="setHeroSlide(0)" aria-label="Slide 1"></button>
+              <button class="hero-dot" onclick="setHeroSlide(1)" aria-label="Slide 2"></button>
+              <button class="hero-dot" onclick="setHeroSlide(2)" aria-label="Slide 3"></button>
+              <button class="hero-dot" onclick="setHeroSlide(3)" aria-label="Slide 4"></button>
+              <button class="hero-dot" onclick="setHeroSlide(4)" aria-label="Slide 5"></button>
+              <button class="hero-dot" onclick="setHeroSlide(5)" aria-label="Slide 6"></button>
+              <button class="hero-dot" onclick="setHeroSlide(6)" aria-label="Slide 7"></button>
+              <button class="hero-dot" onclick="setHeroSlide(7)" aria-label="Slide 8"></button>
+              <button class="hero-dot" onclick="setHeroSlide(8)" aria-label="Slide 9"></button>
+              <button class="hero-dot" onclick="setHeroSlide(9)" aria-label="Slide 10"></button>
+              <button class="hero-dot" onclick="setHeroSlide(10)" aria-label="Slide 11"></button>
+              <button class="hero-dot" onclick="setHeroSlide(11)" aria-label="Slide 12"></button>
+            </div>
+
+            <div class="arrow-accent">
+              <svg viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 70 Q 50 10, 85 45" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-dasharray="3 3"/>
+                <path d="M70 45 L 85 45 L 80 30" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- STATS COUNTER BAR -->
+    <section class="stats-banner">
+      <div class="stats-banner-bg"></div>
+      <div class="container stats-container">
+        <div class="stat-item">
+          <div class="stat-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-num-wrap">
+              <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">LIVES IMPACTED</span>
+          </div>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-item">
+          <div class="stat-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 15h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 16"></path>
+              <path d="m7 21 1.6-1.4c.4-.4.9-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.8a2 2 0 0 0-2.8-2.8l-2.7 2.7"></path>
+              <path d="M15 6 9 12"></path>
+              <path d="m18 3-6 6"></path>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-num-wrap">
+              <span class="stat-number" data-target="20">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">COMMUNITY PARTNERS</span>
+          </div>
+        </div>
+
+        <div class="stat-divider"></div>
+
+        <div class="stat-item">
+          <div class="stat-icon-wrapper">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="stat-info">
+            <div class="stat-num-wrap">
+              <span class="stat-number" data-target="5">0</span>
+            </div>
+            <span class="stat-label">CORE PROGRAMS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- MISSION / ABOUT SECTION -->
+    <section class="about-section" id="home-about-preview">
+      <div class="container about-container">
+        
+        <div class="about-left">
+          <div class="section-tag">OUR MISSION <span class="tag-slashes">////</span></div>
+          <p class="about-text-body">
+            At the heart of NXT Chapter's mission is a network of dedicated departments and passionate individuals working together to create lasting change. From program development and youth outreach to advocacy, mentorship, and workforce placement, each team plays a vital role in supporting successful reentry and strengthening&nbsp;our&nbsp;communities.
+          </p>
+          <button class="btn btn-outline btn-icon" onclick="openModal('story-modal')" id="about-story-btn">
+            READ OUR STORY
+            <span class="icon-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </button>
+        </div>
+
+        <div class="about-right">
+          <div class="know-us-card">
+            <div class="crosshatch-accent"># # #</div>
+            <h2 class="know-us-title">
+              <span class="know-top">GET TO</span>
+              <span class="know-bottom">KNOW US</span>
+            </h2>
+            <p class="know-us-desc">
+              We are a nonprofit organization passionate about creating lasting change in our community. Through collaboration, advocacy, and direct support, we help individuals break barriers and build&nbsp;brighter&nbsp;futures.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- DEPARTMENTS SECTION -->
+    <section class="departments-section" id="home-departments-preview">
+      <div class="container">
+        <div class="section-tag">OUR STRUCTURE <span class="tag-slashes">////</span></div>
+        <h2 class="section-heading">NXT CHAPTER DEPARTMENTS</h2>
+        <p class="section-subtitle">A coordinated network of specialized departments dedicated to systemic empowerment.</p>
+        
+        <div class="departments-grid">
+          
+          <div class="dept-card">
+            <div class="dept-header">
+              <span class="dept-num">01</span>
+              <h3 class="dept-title">Youth Development &amp; Mentorship</h3>
+            </div>
+            <p class="dept-desc">Empowering young adults with leadership training, career discovery workshops, and 1-on-1 relational mentorship.</p>
+            <a href="#youth-modal" class="dept-link" onclick="openModal('youth-modal')">Enroll Youth &rarr;</a>
+          </div>
+
+          <div class="dept-card">
+            <div class="dept-header">
+              <span class="dept-num">02</span>
+              <h3 class="dept-title">Adult Reentry Services</h3>
+            </div>
+            <p class="dept-desc">Providing holistic support, housing connections, record clearing advocacy, and direct stabilization for justice-impacted individuals.</p>
+            <a href="#adult-modal" class="dept-link" onclick="openModal('adult-modal')">Adult Services &rarr;</a>
+          </div>
+
+          <div class="dept-card">
+            <div class="dept-header">
+              <span class="dept-num">03</span>
+              <h3 class="dept-title">Workforce Placement &amp; SkillVRse</h3>
+            </div>
+            <p class="dept-desc">Hands-on job training, VR career simulations, interview preparation, and direct placement with top employer partners.</p>
+            <a href="#skillvrse" class="dept-link">Explore SkillVRse &rarr;</a>
+          </div>
+
+          <div class="dept-card">
+            <div class="dept-header">
+              <span class="dept-num">04</span>
+              <h3 class="dept-title">Community Advocacy &amp; Policy</h3>
+            </div>
+            <p class="dept-desc">Fostering systemic change through policy advocacy, community rallies, neighborhood wellness cookouts, and strategic partner coalitions.</p>
+            <a href="#referral-modal" class="dept-link" onclick="openModal('referral-modal')">Refer Participant &rarr;</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<!-- SKILLVRSE SECTION -->
+    <section class="skillvrse-section" id="home-skillvrse-preview">
+      <div class="container skillvrse-container">
+        
+        <div class="skillvrse-text">
+          <span class="skillvrse-tag">NEXT-GEN TECHNOLOGY</span>
+          <h2 class="skillvrse-title">
+            WELCOME TO <span class="cyan-glow-text">SkillVRse</span>
+          </h2>
+          <p class="skillvrse-desc">
+            SkillVRse is NXT Chapter's immersive Virtual Reality & Digital Skills Lab. Participants gain hands-on trade experiences, interview practice, and technical certifications through cutting-edge VR simulations before stepping into real-world workplaces.
+          </p>
+          <div class="skillvrse-features">
+            <div class="vr-feat"><span class="feat-bullet">&#10003;</span> Simulated Technical Trade Workshops</div>
+            <div class="vr-feat"><span class="feat-bullet">&#10003;</span> Immersive Interview &amp; Public Speaking Practice</div>
+            <div class="vr-feat"><span class="feat-bullet">&#10003;</span> Digital Literacy &amp; AI Tools Mastery</div>
+          </div>
+          <button class="btn btn-primary btn-lg" onclick="showToast('SkillVRse Workshop Schedule: Sessions every Tuesday & Thursday!')">EXPLORE SkillVRse LAB</button>
+        </div>
+
+        <div class="skillvrse-graphic">
+          <div class="vr-glass-box">
+            <div class="vr-badge-live">VR SIMULATION LIVE</div>
+            <div class="vr-icon">🥽</div>
+            <h3>SkillVRse Interactive Lab</h3>
+            <p>Empowering 200+ participants with virtual career readiness.</p>
+            <div class="vr-stat-pill">98% Certification Success Rate</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!-- INSIGHT DASHBOARD SECTION -->
+    <section class="insight-section" id="home-insight-preview">
+      <div class="container">
+        <div class="section-tag">DATA &amp; RESEARCH <span class="tag-slashes">////</span></div>
+        <h2 class="section-heading">NXT INSiGHT DASHBOARD</h2>
+        <p class="section-subtitle">Real-time metrics, transparent community outcomes, and qualitative participant feedback.</p>
+
+        <div class="insight-grid">
+          
+          <div class="insight-card">
+            <h4>Workforce Retention Rate</h4>
+            <div class="insight-stat-big">89%</div>
+            <p>Participants maintaining employment at 12 months post-placement.</p>
+          </div>
+
+          <div class="insight-card">
+            <h4>Average Hourly Wage</h4>
+            <div class="insight-stat-big">$22.50</div>
+            <p>Average starting hourly compensation across workforce partners.</p>
+          </div>
+
+          <div class="insight-card">
+            <h4>Recidivism Reduction</h4>
+            <div class="insight-stat-big">&lt; 4%</div>
+            <p>Recidivism rate for NXT Chapter reentry program graduates.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- PAGE 2: PROGRAMS -->
+    <div class="page-container" id="page-programs">
+<!-- PROGRAMS SECTION (RECREATED SPLIT DESIGN FROM REFERENCE IMAGE) -->
+    <section class="programs-split-section" id="programs">
+      
+      <!-- TOP BLOCK: S.E.E.D PROGRAM -->
+      <div class="program-split-row seed-row">
+        
+        <!-- LEFT SIDE: DARK SLATE NAVY CARD -->
+        <div class="program-hero-card seed-dark-hero">
+          <div class="hero-card-inner">
+            <h2 class="program-spaced-title seed-title">S.E.E.D PROGRAM</h2>
+            <p class="program-body-text">
+              The SEED Program—Support, Empowerment, Education, and Development—equips formerly incarcerated adults with the tools they need to succeed. Through access to vital resources, life skills training, and employment support, SEED helps participants navigate reentry and build lasting self-sufficiency.
+            </p>
+            <p class="program-callout-text">
+              <span class="pointing-finger">👉</span> Ready to see how SEED transforms lives? <a href="#adult-modal" onclick="openModal('adult-modal')" class="callout-link">Learn more about the SEED Program</a>
+            </p>
+            <button class="btn-purple-signup" onclick="openModal('adult-modal')">Sign Up</button>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: WHITE COMPOSITE GRAPHIC CARD -->
+        <div class="program-graphic-card seed-white-graphic">
+          <!-- Top Sprout Badge Emblem -->
+          <div class="seed-badge-wrapper">
+            <div class="seed-sprout-circle">
+              <svg width="64" height="64" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="46" fill="#FFFFFF" stroke="#2563EB" stroke-width="2"/>
+                <path d="M50 72C50 72 32 62 32 45C32 34 43 28 50 38C57 28 68 34 68 45C68 62 50 72 50 72Z" fill="#16A34A"/>
+                <path d="M50 38V68" stroke="#15803D" stroke-width="3" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="42" stroke="#2563EB" stroke-width="1.5" stroke-dasharray="3 3"/>
+                <text x="50" y="86" font-family="'Inter', sans-serif" font-weight="900" font-size="10" fill="#1E3A8A" text-anchor="middle">S.E.E.D</text>
+              </svg>
+            </div>
+          </div>
+
+          <h3 class="graphic-card-heading seed-heading">S.E.E.D PROGRAM</h3>
+
+          <p class="graphic-card-subtext">
+            Our SEED (Support, Empowerment, Education, and Development) Program provides formerly incarcerated adults with essential resources, life skills training, and employment support to foster successful reentry and long-term self-sufficiency.
+          </p>
+
+          <p class="graphic-card-italic">
+            Learn more about how SEED is helping individuals rebuild their lives and thrive after incarceration.
+          </p>
+
+          <!-- Split graphic grid: 4 Stacked Pills (Left) + 3 Photo Cards Frame (Right) -->
+          <div class="seed-graphic-split">
+            <!-- Left: 4 Stacked Pills -->
+            <div class="seed-pill-stack">
+              <div class="seed-pill seed-pill-navy">Support</div>
+              <div class="seed-pill seed-pill-slate">Empowerment</div>
+              <div class="seed-pill seed-pill-navy">Education</div>
+              <div class="seed-pill seed-pill-slate">Development</div>
+            </div>
+
+            <!-- Right: Dark Blue Container with 2 Stacked Photos -->
+            <div class="seed-photo-frame">
+              <div class="photo-card-item">
+                <img src="assets/seed_group_table.png" alt="SEED Group Counseling Table Discussion">
+              </div>
+              <div class="photo-card-item">
+                <img src="assets/seed_counseling.png" alt="SEED 1-on-1 Career Mentorship Session">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BOTTOM BLOCK: YOUTH PROGRAM -->
+      <div class="program-split-row youth-row">
+        
+        <!-- LEFT SIDE: WHITE COMPOSITE GRAPHIC CARD -->
+        <div class="program-graphic-card youth-white-graphic">
+          
+          <div class="youth-graphic-top">
+            <div class="youth-hero-img-wrap">
+              <img src="assets/youth_girls.png" alt="NXT Chapter Youth Mentorship" class="youth-graphic-img">
+            </div>
+            
+            <div class="youth-graphic-header-text">
+              <h3 class="graphic-card-heading youth-heading">YOUTH PROGRAM</h3>
+              <p class="graphic-card-subtext">
+                Our Youth Program focuses on early intervention and mentorship for at-risk youth, promoting personal growth, education, and positive decision-making to break the cycle of incarceration before it begins.
+              </p>
+              <p class="graphic-card-italic">
+                Discover how our Youth Program guides young people toward brighter, more hopeful futures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Bottom bar: THE PROGRAM INCLUDE + 3 Sub-Cards -->
+          <div class="youth-program-includes-container">
+            <div class="includes-header-bar">
+              THE PROGRAM INCLUDE
+            </div>
+            <div class="includes-cards-grid">
+              <div class="include-card">
+                <div class="include-card-img-wrap">
+                  <img src="assets/youth_edu.png" alt="Supports Education">
+                </div>
+                <div class="include-card-caption">SUPPORTS EDUCATION</div>
+              </div>
+
+              <div class="include-card">
+                <div class="include-card-img-wrap">
+                  <img src="assets/youth_growth.png" alt="Personal Growth">
+                </div>
+                <div class="include-card-caption">PERSONAL GROWTH</div>
+              </div>
+
+              <div class="include-card">
+                <div class="include-card-img-wrap">
+                  <img src="assets/youth_decision.png" alt="Positive Decision-Making">
+                </div>
+                <div class="include-card-caption">POSITIVE DECISION-MAKING</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT SIDE: TEAL/CYAN HERO CARD -->
+        <div class="program-hero-card youth-cyan-hero">
+          <div class="hero-card-inner">
+            <h2 class="program-spaced-title youth-title">YOUTH PROGRAM</h2>
+            <p class="program-body-text">
+              Our Youth Program provides early intervention and mentorship for at-risk youth, focusing on education, character development, and positive life choices. By addressing challenges early, we empower young people to break generational cycles and build strong foundations for the future.
+            </p>
+            <p class="program-callout-text">
+              <span class="pointing-finger">👉</span> Explore how we're shaping brighter paths for youth. <a href="#youth-modal" onclick="openModal('youth-modal')" class="callout-link">Learn more about the Youth Program</a>
+            </p>
+            <button class="btn-purple-signup" onclick="openModal('youth-modal')">Sign Up</button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    </div>
+
+    <!-- PAGE 3: IMPACT -->
+    <div class="page-container" id="page-impact">
+<!-- IMPACT PAGE RECREATION SECTION -->
+    <section class="impact-page-recreation" id="impact">
+      
+      <!-- PART 1: PREMIUM HERO BANNER -->
+      <div class="impact-hero-dark-banner">
+        <div class="container">
+          
+          <!-- Top Tag Badge -->
+          <div class="hero-dark-top-row">
+            <div class="hero-tag-badge">
+              <span class="tag-pulse"></span> COMMUNITY IMPACT &amp; TRANSFORMATION
+            </div>
+          </div>
+
+          <div class="hero-dark-grid">
+            
+            <!-- LEFT COLUMN: REAL CHANGE REAL STORIES REAL IMPACT -->
+            <div class="hero-dark-left">
+              <h2 class="hero-dark-title">
+                REAL <span class="gradient-purple-text">CHANGE</span><br>
+                REAL <span class="gradient-cyan-text">STORIES</span><br>
+                REAL <span class="gradient-purple-text">IMPACT</span>
+              </h2>
+            </div>
+
+            <!-- VERTICAL DIVIDER LINE -->
+            <div class="hero-vertical-divider"></div>
+
+            <!-- RIGHT COLUMN: MISSION PARAGRAPH & CALLOUT -->
+            <div class="hero-dark-right">
+              <p class="hero-dark-paragraph">
+                At NxtChapter, our impact is measured by lives transformed and futures reclaimed. By providing critical support during the vulnerable transition from incarceration to community life, we help reduce recidivism, increase employment, and restore individual dignity. Each person we serve contributes to a ripple effect—strengthening families, improving neighborhoods, and building a more just and compassionate society.
+              </p>
+              
+              <div class="hero-quote-card">
+                <div class="quote-symbol">&ldquo;</div>
+                <p class="quote-italic-text">
+                  Together, we're transforming lives, restoring dignity, and building brighter futures across our communities.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- BOTTOM QUICK METRICS STRIP -->
+          <div class="hero-impact-stats-strip">
+            <div class="impact-stat-pill-item">
+              <span class="stat-pill-num">500+</span>
+              <span class="stat-pill-label">Lives Impacted</span>
+            </div>
+            <div class="impact-stat-divider"></div>
+            <div class="impact-stat-pill-item">
+              <span class="stat-pill-num">&lt; 4%</span>
+              <span class="stat-pill-label">Recidivism Rate</span>
+            </div>
+            <div class="impact-stat-divider"></div>
+            <div class="impact-stat-pill-item">
+              <span class="stat-pill-num">89%</span>
+              <span class="stat-pill-label">Job Retention</span>
+            </div>
+            <div class="impact-stat-divider"></div>
+            <div class="impact-stat-pill-item">
+              <span class="stat-pill-num">$22.50</span>
+              <span class="stat-pill-label">Avg. Starting Wage</span>
+            </div>
+          </div>
+
+          <!-- SCROLL DOWN CALLOUT AT BOTTOM CENTER -->
+          <div class="hero-dark-scroll-prompt">
+            <a href="#impact-carousel-viewport" class="scroll-prompt-link">
+              Explore Data &amp; Insights <span class="animated-down-arrow">&darr;</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PART 2: IMPACT & INSIGHTS SECTION (WHITE BACKGROUND) -->
+      <div class="impact-insights-white-section">
+        <div class="container">
+          
+          <div class="insights-header-block">
+            <div class="section-tag-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="20" x2="18" y2="10"/>
+                <line x1="12" y1="20" x2="12" y2="4"/>
+                <line x1="6" y1="20" x2="6" y2="14"/>
+              </svg>
+              MEASURABLE OUTCOMES &amp; DATA
+            </div>
+
+            <h2 class="insights-main-heading">
+              Impact <span class="accent-purple-gradient">&amp;</span> Insights
+            </h2>
+            
+            <div class="heading-accent-line"></div>
+
+            <p class="insights-main-subtitle">
+              Reentry programs are a proven solution—reducing recidivism by up to <strong>67%</strong> and empowering returning citizens to build sustainable careers, restore dignity, and create safer communities. Explore our key metrics, employment access data, and systemic statistics below.
+            </p>
+          </div>
+
+          <!-- INTERACTIVE INFOGRAPHIC SLIDE CAROUSEL -->
+          <div class="impact-carousel-wrapper">
+            
+            <!-- Main Slide Viewport -->
+            <div class="impact-carousel-viewport" id="impact-carousel-viewport">
+              
+              <!-- Left Arrow Button -->
+              <button type="button" class="carousel-nav-btn prev-btn" onclick="moveImpactSlide(-1)" aria-label="Previous slide">&lsaquo;</button>
+              
+              <!-- Slide Images Container -->
+              <div class="impact-slides-container">
+                <div class="impact-slide-item active">
+                  <img src="assets/impact_slide_metrics.png" alt="Key Success Metrics (2024-2025)" class="impact-slide-img">
+                </div>
+                <div class="impact-slide-item">
+                  <img src="assets/impact_slide_employment.png" alt="Where Second Chances Begin: Employment Access" class="impact-slide-img">
+                </div>
+                <div class="impact-slide-item">
+                  <img src="assets/impact_slide_why_reentry.png" alt="Why Reentry Matters" class="impact-slide-img">
+                </div>
+                <div class="impact-slide-item">
+                  <img src="assets/impact_slide_corrections.png" alt="The Bigger Picture: U.S. Corrections System" class="impact-slide-img">
+                </div>
+                <div class="impact-slide-item">
+                  <img src="assets/impact_slide_challenges.jpg" alt="Challenges Returning Citizens Face" class="impact-slide-img">
+                </div>
+              </div>
+
+              <!-- Right Arrow Button -->
+              <button type="button" class="carousel-nav-btn next-btn" onclick="moveImpactSlide(1)" aria-label="Next slide">&rsaquo;</button>
+            </div>
+
+            <!-- Carousel Caption & Counter Header Bar -->
+            <div class="impact-carousel-bar">
+              <span class="carousel-caption-title" id="impact-carousel-caption">Key Success Metrics (2024–2025)</span>
+              <span class="carousel-counter-badge" id="impact-carousel-counter">Slide 1 of 5</span>
+            </div>
+
+            <!-- Thumbnail Dots Bar -->
+            <div class="impact-carousel-dots" id="impact-carousel-dots">
+              <button type="button" class="impact-dot-pill active" onclick="setImpactSlide(0)">
+                <span class="dot-num">01</span> Key Metrics
+              </button>
+              <button type="button" class="impact-dot-pill" onclick="setImpactSlide(1)">
+                <span class="dot-num">02</span> Employment Access
+              </button>
+              <button type="button" class="impact-dot-pill" onclick="setImpactSlide(2)">
+                <span class="dot-num">03</span> Why Reentry Matters
+              </button>
+              <button type="button" class="impact-dot-pill" onclick="setImpactSlide(3)">
+                <span class="dot-num">04</span> Corrections System
+              </button>
+              <button type="button" class="impact-dot-pill" onclick="setImpactSlide(4)">
+                <span class="dot-num">05</span> Challenges Faced
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- PART 3: TESTIMONIAL CAROUSEL BANNER (PURPLE BACKGROUND) -->
+      <div class="impact-testimonial-purple-banner">
+        <div class="container testimonial-container">
+          
+          <!-- Prev Arrow -->
+          <button type="button" class="testimonial-arrow-btn prev-arrow" onclick="nextTestimonial(-1)" aria-label="Previous Testimonial">&lsaquo;</button>
+
+          <!-- White Testimonial Card -->
+          <div class="testimonial-white-card" id="testimonial-card-element">
+            <span class="testimonial-badge-tag">TESTIMONIAL</span>
+            
+            <p class="testimonial-quote-text" id="testimonial-quote">
+              "NxtChapter gave me purpose. It helped me see the power of positive change—not just in others, but in myself. It’s taught me to believe in my people and reminded me that anything is possible."
+            </p>
+            
+            <h4 class="testimonial-author-name" id="testimonial-author">Don F.</h4>
+          </div>
+
+          <!-- Next Arrow -->
+          <button type="button" class="testimonial-arrow-btn next-arrow" onclick="nextTestimonial(1)" aria-label="Next Testimonial">&rsaquo;</button>
+
+        </div>
+
+        <!-- Carousel Pagination Dots -->
+        <div class="testimonial-dots-bar">
+          <button type="button" class="dot-btn active" onclick="setTestimonial(0)"></button>
+          <button type="button" class="dot-btn" onclick="setTestimonial(1)"></button>
+          <button type="button" class="dot-btn" onclick="setTestimonial(2)"></button>
+          <button type="button" class="dot-btn" onclick="setTestimonial(3)"></button>
+        </div>
+      </div>
+
+    </section>
+    </div>
+
+    <!-- PAGE 4: NEWS & EVENTS -->
+    <div class="page-container" id="page-news">
+<!-- RECREATED NEWS & EVENTS PAGE SECTION -->
+    <section class="news-page-recreation" id="news">
+      
+      <!-- TOP BANNER WITH STACKED HEADER & SEARCH INPUT -->
+      <div class="news-top-banner">
+        <div class="container news-banner-grid">
+          
+          <div class="news-banner-title-box">
+            <div class="hero-tag-badge news-tag-badge">
+              <span class="tag-pulse"></span> LATEST DISPATCHES &amp; EVENTS
+            </div>
+            
+            <h2 class="news-stacked-title">
+              UPCOMING <span class="gradient-purple-text">EVENTS</span> &amp;<br>
+              <span class="gradient-cyan-text">COMMUNITY</span> ENGAGEMENT
+            </h2>
+          </div>
+
+          <div class="news-search-box">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="2.5" class="search-icon-inside">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" placeholder="Search news, events &amp; topics..." class="news-search-input" id="news-search-field" onkeyup="filterNewsSearch(event)">
+            <button type="button" class="news-search-btn" aria-label="Search" onclick="handleNewsSearch()">
+              Search
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 5-TAB HEADER NAVIGATION BAR -->
+      <div class="news-tabs-container">
+        <div class="container">
+          <div class="news-tabs-bar">
+            <button type="button" class="news-tab-btn active" id="tab-btn-news" onclick="switchNewsTab('news')">
+              <span class="tab-dot"></span> News
+            </button>
+            <button type="button" class="news-tab-btn" id="tab-btn-events" onclick="switchNewsTab('events')">
+              <span class="tab-dot"></span> Events
+            </button>
+            <button type="button" class="news-tab-btn" id="tab-btn-blog" onclick="switchNewsTab('blog')">
+              <span class="tab-dot"></span> Blog
+            </button>
+            <button type="button" class="news-tab-btn" id="tab-btn-newsletter" onclick="switchNewsTab('newsletter')">
+              <span class="tab-dot"></span> Newsletter
+            </button>
+            <button type="button" class="news-tab-btn" id="tab-btn-impact" onclick="switchNewsTab('impact')">
+              <span class="tab-dot"></span> Impact
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN TAB CONTENT PANES WRAPPER -->
+      <div class="news-panes-wrapper">
+        <div class="container">
+
+          <!-- PANE 1: NEWS -->
+          <div class="news-pane-content active" id="news-pane-news">
+            <div class="news-pane-inner white-card-pane">
+              
+              <div class="pane-header-block">
+                <span class="pane-tag-badge">LATEST UPDATES</span>
+                <h3 class="pane-headline-cyan">IN THE KNOW</h3>
+                <div class="heading-accent-line"></div>
+                <p class="pane-description-text">
+                  Stay informed with the latest developments from NxtChapter. Our News section features program announcements, community partnerships, media coverage, policy updates, and key milestones highlighting our impact and ongoing mission to support successful reentry and reduce recidivism.
+                </p>
+              </div>
+
+              <!-- 4 NEWS ARTICLES GRID (2x2) -->
+              <div class="news-articles-grid">
+                
+                <!-- Article 1 -->
+                <div class="news-article-card">
+                  <div class="article-avatar-wrap">
+                    <img src="assets/partner.png" alt="HBCU Research" class="article-avatar-img">
+                  </div>
+                  <div class="article-details">
+                    <span class="article-category-tag tag-cyan">PHILANTHROPY</span>
+                    <h4 class="article-title">Jumpstarting Sarcoidosis Research: Why Strategic Philanthropy Must Invest in HBCUs</h4>
+                    <button type="button" class="btn-read-more" onclick="showToast('Reading full article: Jumpstarting Sarcoidosis Research...')">Read Article &rarr;</button>
+                  </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="news-article-card">
+                  <div class="article-avatar-wrap">
+                    <img src="assets/mentorship.png" alt="State Legislators" class="article-avatar-img">
+                  </div>
+                  <div class="article-details">
+                    <span class="article-category-tag tag-purple">POLICY &amp; ADVOCACY</span>
+                    <h4 class="article-title">Why State Legislators Need Global Strategy</h4>
+                    <button type="button" class="btn-read-more" onclick="showToast('Reading full article: Why State Legislators Need Global Strategy...')">Read Article &rarr;</button>
+                  </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="news-article-card">
+                  <div class="article-avatar-wrap">
+                    <img src="assets/cookout.png" alt="Black Churches Civic Infrastructure" class="article-avatar-img">
+                  </div>
+                  <div class="article-details">
+                    <span class="article-category-tag tag-green">COMMUNITY</span>
+                    <h4 class="article-title">How Black Churches Built the Civic Infrastructure That Kept the Nation Alive</h4>
+                    <button type="button" class="btn-read-more" onclick="showToast('Reading full article: How Black Churches Built Civic Infrastructure...')">Read Article &rarr;</button>
+                  </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="news-article-card">
+                  <div class="article-avatar-wrap">
+                    <img src="assets/seed_group_table.png" alt="Board Annual Budget" class="article-avatar-img">
+                  </div>
+                  <div class="article-details">
+                    <span class="article-category-tag tag-purple">GOVERNANCE</span>
+                    <h4 class="article-title">Should the Board Be Involved in Setting the Annual Budget?</h4>
+                    <button type="button" class="btn-read-more" onclick="showToast('Reading full article: Should the Board Be Involved...')">Read Article &rarr;</button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- PANE 2: EVENTS -->
+          <div class="news-pane-content" id="news-pane-events">
+            <div class="news-pane-inner dark-card-pane">
+              
+              <div class="pane-header-block">
+                <span class="pane-tag-badge tag-dark-badge">LIVE SCHEDULE</span>
+                <h3 class="pane-headline-purple">WHERE WE'LL BE</h3>
+                <div class="heading-accent-line"></div>
+                <p class="pane-description-text dark-text-light">
+                  From workshops and resource fairs to speaking engagements and volunteer opportunities, our Events page keeps you connected to the heartbeat of NxtChapter. Join us as we unite communities, professionals, and advocates to support returning citizens.
+                </p>
+              </div>
+
+              <!-- LIVE COUNTDOWN TIMER BLOCK -->
+              <div class="countdown-hero-card">
+                <h4 class="events-click-prompt">NEXT UPCOMING COMMUNITY ENGAGEMENT EVENT</h4>
+                
+                <div class="countdown-timer-wrap">
+                  <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-days">00</span>
+                    <span class="countdown-label">DAYS</span>
+                  </div>
+                  <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-hours">00</span>
+                    <span class="countdown-label">HOURS</span>
+                  </div>
+                  <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-minutes">00</span>
+                    <span class="countdown-label">MINUTES</span>
+                  </div>
+                  <div class="countdown-unit">
+                    <span class="countdown-num" id="cd-seconds">00</span>
+                    <span class="countdown-label">SECONDS</span>
+                  </div>
+                </div>
+
+                <div class="events-coming-soon-btn">
+                  <button type="button" class="btn-coming-soon" onclick="showToast('Upcoming NXT Chapter Event details coming soon!')">Register for Event &rarr;</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE 3: BLOG -->
+          <div class="news-pane-content" id="news-pane-blog">
+            <div class="news-pane-inner white-card-pane">
+              
+              <div class="pane-header-block">
+                <span class="pane-tag-badge">INSIGHTS &amp; REFLECTIONS</span>
+                <h3 class="pane-headline-purple">THE NXT VOICE</h3>
+                <div class="heading-accent-line"></div>
+                <p class="pane-description-text">
+                  Explore in-depth stories, expert insights, and reflections on reentry, advocacy, and justice reform. Our Blog offers thought-provoking content that uplifts voices from within the system and provides educational resources to inspire action.
+                </p>
+              </div>
+
+              <!-- 12 BLOG POST CARDS GRID (4 COLUMNS) -->
+              <div class="blog-posts-grid">
+                
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/partner.png" alt="A New Path for Reentry and Renewal" class="blog-thumb-img">
+                    <span class="blog-card-tag">REENTRY</span>
+                  </div>
+                  <h4 class="blog-card-title">A New Path for Reentry and Renewal</h4>
+                  <span class="blog-card-meta">3 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/seed_group_table.png" alt="NXT Chapter Job Fair" class="blog-thumb-img">
+                    <span class="blog-card-tag">EMPLOYMENT</span>
+                  </div>
+                  <h4 class="blog-card-title">NXT Chapter Job Fair: Opening Doors to New Beginnings</h4>
+                  <span class="blog-card-meta">4 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/youth_girls.png" alt="Reentry Success at Nxt Chapter" class="blog-thumb-img">
+                    <span class="blog-card-tag">SUCCESS STORY</span>
+                  </div>
+                  <h4 class="blog-card-title">Reentry Success at Nxt Chapter</h4>
+                  <span class="blog-card-meta">5 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/youth_growth.png" alt="Something New Is on the Horizon" class="blog-thumb-img">
+                    <span class="blog-card-tag">ANNOUNCEMENT</span>
+                  </div>
+                  <h4 class="blog-card-title">Something New Is on the Horizon</h4>
+                  <span class="blog-card-meta">2 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/cookout.png" alt="Sanctuary Resource Center" class="blog-thumb-img">
+                    <span class="blog-card-tag">PARTNERSHIP</span>
+                  </div>
+                  <h4 class="blog-card-title">Nxt Chapter x Sanctuary Resource Center Now Open</h4>
+                  <span class="blog-card-meta">4 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/mentorship.png" alt="Stories of Growth and Resilience" class="blog-thumb-img">
+                    <span class="blog-card-tag">MENTORSHIP</span>
+                  </div>
+                  <h4 class="blog-card-title">Stories of Growth and Resilience</h4>
+                  <span class="blog-card-meta">5 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/seed_circle.png" alt="A Youthful Night Out!" class="blog-thumb-img">
+                    <span class="blog-card-tag">YOUTH</span>
+                  </div>
+                  <h4 class="blog-card-title">A Youthful Night Out!</h4>
+                  <span class="blog-card-meta">3 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/youth_edu.png" alt="Empowering Youth Through Resume Development" class="blog-thumb-img">
+                    <span class="blog-card-tag">WORKSHOPS</span>
+                  </div>
+                  <h4 class="blog-card-title">Building Futures: Empowering Youth Through Resume Development</h4>
+                  <span class="blog-card-meta">4 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/youth_decision.png" alt="Breaking Self-Sabotage Through Accountability" class="blog-thumb-img">
+                    <span class="blog-card-tag">MINDSET</span>
+                  </div>
+                  <h4 class="blog-card-title">Breaking Self-Sabotage Through Accountability</h4>
+                  <span class="blog-card-meta">6 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/seed_counseling.png" alt="Giving Back" class="blog-thumb-img">
+                    <span class="blog-card-tag">COMMUNITY</span>
+                  </div>
+                  <h4 class="blog-card-title">Giving Back</h4>
+                  <span class="blog-card-meta">3 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/seed_group_table.png" alt="Where Growth Begins" class="blog-thumb-img">
+                    <span class="blog-card-tag">SUPPORT</span>
+                  </div>
+                  <h4 class="blog-card-title">Where Growth Begins: Supporting All Through Life's Challenges</h4>
+                  <span class="blog-card-meta">4 min read</span>
+                </div>
+
+                <div class="blog-card">
+                  <div class="blog-thumb-wrap">
+                    <img src="assets/youth_girls.png" alt="New Beginnings and Real Growth" class="blog-thumb-img">
+                    <span class="blog-card-tag">TRANSFORMATION</span>
+                  </div>
+                  <h4 class="blog-card-title">New Beginnings and Real Growth</h4>
+                  <span class="blog-card-meta">5 min read</span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- PANE 4: NEWSLETTER -->
+          <div class="news-pane-content" id="news-pane-newsletter">
+            <div class="news-pane-inner white-card-pane">
+              
+              <div class="pane-header-block">
+                <span class="pane-tag-badge">MONTHLY DISPATCH</span>
+                <h3 class="pane-headline-purple">BRIDGES TO BETTER</h3>
+                <div class="heading-accent-line"></div>
+                <p class="pane-description-text">
+                  Stay connected and informed with <strong>The NxtChapter Dispatch</strong>, our official newsletter. Each edition brings inspiring success stories, program updates, upcoming events, volunteer opportunities, and key insights into reentry and justice reform.
+                </p>
+              </div>
+
+              <!-- DUAL COLUMN SUBSCRIPTION BOX -->
+              <div class="newsletter-subscription-box">
+                <div class="newsletter-split-grid">
+                  
+                  <div class="newsletter-info-side">
+                    <h4 class="newsletter-sub-headline">Subscribe to Our Official Dispatch</h4>
+                    <p class="newsletter-sub-desc">Get the latest impact reports, participant stories, and event invitations delivered directly to your inbox every month.</p>
+                    <ul class="newsletter-benefits-list">
+                      <li><span class="check-icon">&check;</span> Monthly Success Stories &amp; Highlights</li>
+                      <li><span class="check-icon">&check;</span> Priority Invitations to Job Fairs &amp; Events</li>
+                      <li><span class="check-icon">&check;</span> Reentry Reform &amp; Advocacy Policy Updates</li>
+                    </ul>
+                  </div>
+
+                  <div class="newsletter-form-side">
+                    <form onsubmit="handleNewsletterPaneSubmit(event)" class="newsletter-form-grid">
+                      <div class="form-group-email">
+                        <label for="pane-newsletter-email">Work / Personal Email Address *</label>
+                        <input type="email" id="pane-newsletter-email" placeholder="name@example.com" required class="input-newsletter">
+                      </div>
+                      
+                      <button type="submit" class="btn-green-join">Subscribe Now &rarr;</button>
+
+                      <div class="checkbox-line">
+                        <input type="checkbox" id="pane-newsletter-agree" required>
+                        <label for="pane-newsletter-agree">I agree to receive monthly newsletters from NXT Chapter.</label>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- PANE 5: IMPACT FACILITY OUTREACH -->
+          <div class="news-pane-content" id="news-pane-impact">
+            <div class="news-pane-inner white-card-pane">
+              
+              <div class="pane-header-block">
+                <span class="pane-tag-badge">COMMUNITY OUTREACH</span>
+                <h3 class="pane-headline-purple">WHERE WE'RE MAKING AN IMPACT</h3>
+                <div class="heading-accent-line"></div>
+                <p class="pane-description-text">
+                  Stay connected with where you can find NxtChapter in action. We highlight the locations, programs, and community gatherings where we show up, build relationships, and create opportunities for second chances.
+                </p>
+              </div>
+
+              <!-- 3 HIGH-RES VERTICAL POSTERS GRID -->
+              <div class="impact-posters-display-grid">
+                
+                <!-- Poster 1: Arrowhead Correctional Center -->
+                <div class="poster-graphic-card">
+                  <img src="assets/Impact Photos/Impact Photo 2.jpg" alt="Arrowhead Correctional Center - NXT Chapter Outreach" class="poster-graphic-img">
+                </div>
+
+                <!-- Poster 2: Gilliam Youth Services Center -->
+                <div class="poster-graphic-card">
+                  <img src="assets/Impact Photos/Impact Photo 1.jpg" alt="Gilliam Youth Services Center - NXT Chapter Outreach" class="poster-graphic-img">
+                </div>
+
+                <!-- Poster 3: Crowley County Correctional Facility -->
+                <div class="poster-graphic-card">
+                  <img src="assets/Impact Photos/Impact Photo 3.jpg" alt="Crowley County Correctional Facility - NXT Chapter Outreach" class="poster-graphic-img">
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- PAGE 5: DEPARTMENTS -->
+    <div class="page-container" id="page-departments">
+<!-- OUR TEAM & DEPARTMENTS SECTION (EXACT MATCHING DESIGN) -->
+    <section class="departments-page-recreation" id="departments">
+      <div class="departments-header-container">
+        <h2 class="departments-main-title">OUR TEAM & DEPARTMENTS</h2>
+        <h3 class="departments-sub-title">DEDICATION. EXPERTISE. PASSION.</h3>
+        <p class="departments-intro-text">
+          At the heart of NxtChapter's mission is a network of dedicated departments and passionate individuals working together to create lasting change. From program development and youth outreach to advocacy, mentorship, and workforce placement, each team plays a vital role in supporting successful reentry and strengthening&nbsp;our&nbsp;communities. Behind every success story is a committed group of professionals and mentors who believe in second chances and the power of transformation. Get to know the people driving&nbsp;our&nbsp;impact&nbsp;every&nbsp;day.
+        </p>
+      </div>
+
+      <div class="departments-grid-container">
+        <div class="team-cards-2col-grid">
+          
+          <!-- Card 1: Executive Director Founder -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Leading with vision and passion, our Executive Director and Founder established NxtChapter to create lasting change for justice-impacted individuals. Our commitment to second chances and community empowerment guides our strategic direction, partnerships, and mission-driven impact.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Executive Director Founder</span>
+              <h4 class="member-name">Josephine Burton</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:josephine_10@nxtchapter.org" class="email-link">josephine_10@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Co Founder -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>As a driving force behind NxtChapter's foundation, our Co-Founder brings vision, strategic direction, and dedication to empowering our communities. Their leadership supports strategic growth, innovative programs, and the overarching mission of restoration and success for affected individuals.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Co Founder</span>
+              <h4 class="member-name">Marquell Burton</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:marquellb@nxtchapter.org" class="email-link">marquellb@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Youth Director -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Our Youth Director is dedicated to guiding at-risk youth toward brighter futures through mentorship, education, and community intervention. By promoting personal growth and positive decision-making, their role helps break generational cycles and build strong foundations for the future.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Youth Director</span>
+              <h4 class="member-name">Kenny Harris</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:kennyh@nxtchapter.org" class="email-link">kennyh@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Director of Recovery -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Our Director of Recovery leads with compassion and expertise to support individuals on their journeys to healing and stability. Through evidence-based programs, peer support, and resource connection, their leadership fosters resilience and long-term recovery for those we serve.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Director of Recovery</span>
+              <h4 class="member-name">Mark Pulase</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:markp@nxtchapter.org" class="email-link">markp@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Peer Recovery Coach -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>As a Peer Recovery Coach, their role provides lived experience, guidance, and support to individuals navigating recovery. Their support builds trust, personal goal-setting, and community resource connection, working hand-in-hand to foster long-term recovery and personal growth.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Peer Recovery Coach</span>
+              <h4 class="member-name">Samuel Elley</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:samuele@nxtchapter.org" class="email-link">samuele@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Case Manager -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Provides individualized case management support to help clients navigate reentry and access essential resources. Their role includes developing personalized goals, connects participants to housing, employment, and education, ensuring long-term stability and successful community integration.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Case Manager</span>
+              <h4 class="member-name">Kenyale Burton-Hobley</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:kenyaleb@nxtchapter.org" class="email-link">kenyaleb@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7: Youth Violence Prevention Specialist -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Working directly with youth at risk, our Youth Violence Prevention Specialist focuses on early intervention, conflict resolution, and support to help young people make positive choices, build healthy relationships, and connect with community resources for a peaceful future.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Youth Violence Prevention Specialist / Violence Interruption Specialist</span>
+              <h4 class="member-name">Kevin Gayton</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:keving@nxtchapter.org" class="email-link">keving@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8: Certified Peer Recovery Coach Lead -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>As the Certified Peer Recovery Coach Lead, they provide guidance, mentorship, and support to individuals navigating recovery. Lived experience, peer support, and goal setting empower participants to navigate challenges, build healthy relationships, and pursue long-term stability, personal growth, and healing.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Certified Peer Recovery Coach Lead</span>
+              <h4 class="member-name">Stephanie Goodlow</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:stephanieg@nxtchapter.org" class="email-link">stephanieg@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9: Program Coordinator -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>The Program Coordinator oversees the planning, execution, and daily operations of NxtChapter's programs. This role ensures operations run smoothly, supports team members, tracks outcomes, and maintains a strong focus on organizational impact and community engagement.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Program Coordinator</span>
+              <h4 class="member-name">James Harris</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:jamesh@nxtchapter.org" class="email-link">jamesh@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10: Tech Specialist -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Our Tech Specialist maintains NxtChapter's technological infrastructure and software systems, supporting digital systems for program delivery, data management, and operational efficiency across all departments.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Tech Specialist</span>
+              <h4 class="member-name">Zanubea Flowers</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:zanubeaf@nxtchapter.org" class="email-link">zanubeaf@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11: Peer Recovery -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Bringing expertise with compassion, our Peer Recovery Coach provides one-on-one guidance, peer support, and connection to resources. Lived experience builds trust, accountability, and empowerment every step of the way.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Peer Recovery</span>
+              <h4 class="member-name">James Harris Jr.</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:jameshjr@nxtchapter.org" class="email-link">jameshjr@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 12: S.E.E.D Youth Facilitator / Peer Recovery Coach -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Lived experience as a Peer Recovery Coach provides guidance, peer support, and connection to resources for long-term recovery and personal growth. Lived experience builds trust, accountability, and empowerment every step of the way.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">S.E.E.D Youth Facilitator / Peer Recovery Coach</span>
+              <h4 class="member-name">Morgan Harper</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:morganh@nxtchapter.org" class="email-link">morganh@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 13: Outreach Team -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Our Outreach Team connects NxtChapter to the heart of the community. Through engagement, education, and relationship building, they build awareness, foster partnerships, and empower individuals to access the resources they need for support and positive change.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Outreach Team</span>
+              <h4 class="member-name">Jabari Harris</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:jabarih@nxtchapter.org" class="email-link">jabarih@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 14: Reentry Coordinator -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Assisting individuals navigating reentry, our Reentry Coordinator facilitates access to essential services and opportunities. This role guides participants through housing, employment, education, and community resources while providing continuous support and advocacy for successful reintegration.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Reentry Coordinator</span>
+              <h4 class="member-name">Mickey Menawny</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:mickeym@nxtchapter.org" class="email-link">mickeym@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 15: Vital Documentation Coordinator -->
+          <div class="team-profile-card">
+            <div class="team-card-desc">
+              <p>Assisting individuals to obtain essential personal documents needed to access services and opportunities. This role helps participants secure identification, state IDs, birth certificates, Social Security cards, and criminal records, ensuring they have the documentation necessary for employment, housing, healthcare, education, and other essential services.</p>
+            </div>
+            <div class="team-card-info">
+              <span class="role-badge">Vital Documentation Coordinator</span>
+              <h4 class="member-name">Benjamin Hervey</h4>
+              <div class="email-action-box">
+                <span class="email-icon">✉</span>
+                <div class="email-text-wrap">
+                  <span class="email-label">Click Mail Button to Email</span>
+                  <a href="mailto:benjaminh@nxtchapter.org" class="email-link">benjaminh@nxtchapter.org</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    </div>
+
+    <!-- PAGE 6: SKILLVRSE -->
+    <div class="page-container" id="page-skillvrse">
+      <!-- SKILLVRSE PAGE SECTION (MIRRORING INSIGHT PAGE DESIGN) -->
+      <section class="insight-page-recreation" id="skillvrse">
+        <div class="insight-container">
+          
+          <!-- 1. Hero Graphic Banner -->
+          <div class="insight-hero-banner">
+            <img src="assets/SkillVRse Banner.png" alt="SkillVRse Virtual Reality Pre-Employment VR Training" class="insight-banner-img">
+          </div>
+
+          <!-- 2. Video Explainer Container -->
+          <div class="insight-video-box">
+            <div class="insight-video-wrapper">
+              <iframe width="100%" height="480" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="SkillVRse VR Training Overview | The NXT Chapter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <!-- 3. Core Value Proposition Text Block -->
+          <div class="insight-intro-block">
+            <h2 class="insight-headline">
+              PRACTICE REAL WORK<br>
+              TRANSFORM FUTURES
+            </h2>
+            <p class="insight-body-text font-bold">
+              SkillVRse is a virtual reality pre-employment training class designed specifically for formerly incarcerated individuals that improves employment outcomes by 60% compared to traditional&nbsp;classroom&nbsp;training.
+            </p>
+            <p class="insight-body-text">
+              SkillVRse is redefining workforce preparation through immersive virtual reality training. By allowing participants to practice real-world job scenarios in a safe, engaging environment, we're building confidence, developing practical skills, and creating new pathways to high-paying jobs before ever stepping into&nbsp;the&nbsp;workplace.
+            </p>
+          </div>
+
+
+
+          <!-- 5. Cohort Application & Discovery Booking Lavender Card -->
+          <div class="insight-form-section">
+            <p class="insight-form-lead-text">
+              Welcome to SkillVRse! Space is strictly capped at 10 slots per cohort. Please verify your eligibility requirements below and apply for your Discovery Call with our team.
+            </p>
+
+            <div class="insight-lavender-card">
+              <form id="vr-qualification-form" class="insight-form-grid" onsubmit="event.preventDefault(); showToast('SkillVRse Discovery Call application submitted successfully!');">
+                
+                <div class="form-row-2col">
+                  <div class="form-group-field">
+                    <label for="vr-fname">First name *</label>
+                    <input type="text" id="vr-fname" class="insight-input" required placeholder="First name">
+                  </div>
+                  <div class="form-group-field">
+                    <label for="vr-lname">Last name *</label>
+                    <input type="text" id="vr-lname" class="insight-input" required placeholder="Last name">
+                  </div>
+                </div>
+
+                <div class="form-row-2col">
+                  <div class="form-group-field">
+                    <label for="vr-email">Email *</label>
+                    <input type="email" id="vr-email" class="insight-input" required placeholder="Email address">
+                  </div>
+                  <div class="form-group-field">
+                    <label for="vr-phone">Phone *</label>
+                    <input type="tel" id="vr-phone" class="insight-input" required placeholder="(720) 555-0199">
+                  </div>
+                </div>
+
+                <div class="form-group-field full-width">
+                  <label for="vr-supervision">Are you currently on parole, probation, or pretrial supervision? *</label>
+                  <select id="vr-supervision" class="insight-input" required style="cursor: pointer;">
+                    <option value="yes">Yes - Active Supervision</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="form-group-field full-width">
+                  <label for="vr-cohort">Can you commit to a 4-week class (Tue, Wed, Thu 2.5 hrs/day)? *</label>
+                  <select id="vr-cohort" class="insight-input" required style="cursor: pointer;">
+                    <option value="morning">Yes - Morning Cohort (9:30 AM)</option>
+                    <option value="afternoon">Yes - Afternoon Cohort (12:30 PM)</option>
+                    <option value="no">No</option>
+                  </select>
+                </div>
+
+                <div class="form-group-field full-width">
+                  <label for="vr-notes">Notes or Questions for Vanessa</label>
+                  <textarea id="vr-notes" class="insight-input" rows="4" placeholder="Tell us about your goals or any transportation/scheduling questions..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-insight-submit">Register for Discovery Call</button>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- 6. Interactive Discovery Call Booking Calendar -->
+          <div class="skillvrse-booking-section" style="margin-top: 60px; text-align: center;">
+            <h2 class="booking-main-title">DISCOVERY CALL</h2>
+            <p class="booking-subtitle">Check out our availability and choose the date and time that works for you.</p>
+
+            <div class="vr-calendar-card">
+              <div class="calendar-card-header">
+                <span class="step-title">SELECT A DATE AND TIME</span>
+                <span class="timezone-label">Mountain Daylight Time (MDT)</span>
+              </div>
+
+              <div class="calendar-body-grid">
+                
+                <!-- Month & Date Selector Grid -->
+                <div class="calendar-picker-left">
+                  <div class="month-nav-header">
+                    <button class="cal-nav-btn">&lt;</button>
+                    <span class="current-month-text">August, 2025</span>
+                    <button class="cal-nav-btn">&gt;</button>
+                  </div>
+
+                  <div class="weekdays-row">
+                    <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+                  </div>
+
+                  <div class="days-grid">
+                    <span class="day-num muted"></span>
+                    <span class="day-num muted"></span>
+                    <span class="day-num muted"></span>
+                    <span class="day-num muted"></span>
+                    <span class="day-num muted"></span>
+                    <span class="day-num">1</span>
+                    <span class="day-num">2</span>
+                    
+                    <span class="day-num">3</span>
+                    <span class="day-num">4</span>
+                    <span class="day-num">5</span>
+                    <span class="day-num">6</span>
+                    <span class="day-num">7</span>
+                    <span class="day-num">8</span>
+                    <span class="day-num">9</span>
+
+                    <span class="day-num">10</span>
+                    <span class="day-num active-selected">11</span>
+                    <span class="day-num">12</span>
+                    <span class="day-num">13</span>
+                    <span class="day-num">14</span>
+                    <span class="day-num">15</span>
+                    <span class="day-num">16</span>
+
+                    <span class="day-num">17</span>
+                    <span class="day-num">18</span>
+                    <span class="day-num">19</span>
+                    <span class="day-num">20</span>
+                    <span class="day-num">21</span>
+                    <span class="day-num">22</span>
+                    <span class="day-num">23</span>
+
+                    <span class="day-num">24</span>
+                    <span class="day-num">25</span>
+                    <span class="day-num">26</span>
+                    <span class="day-num">27</span>
+                    <span class="day-num">28</span>
+                    <span class="day-num">29</span>
+                    <span class="day-num">30</span>
+
+                    <span class="day-num">31</span>
+                  </div>
+                </div>
+
+                <!-- Available Time Slots Panel -->
+                <div class="calendar-time-right">
+                  <p class="availability-date-label">Availability on Tuesday, August 11</p>
+                  <p class="no-avail-text">No availability</p>
+                  <button class="btn-check-more-avail" onclick="showToast('Loading available morning &amp; afternoon slots for August 12...')">Check More Availability</button>
+                </div>
+
+              </div>
+
+              <div class="calendar-card-footer">
+                <button class="btn-purple-next" onclick="showToast('Proceeding to Discovery Call confirmation...')">Next</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 7: INSIGHT -->
+    <div class="page-container" id="page-insight">
+<!-- INSIGHT PAGE SECTION (EXACT MATCHING DESIGN) -->
+    <section class="insight-page-recreation" id="insight">
+      <div class="insight-container">
+        
+        <!-- 1. Hero Graphic Banner -->
+        <div class="insight-hero-banner">
+          <img src="assets/INSiGHT Banner.png" alt="INSiGHT AI Agent System - Coming Soon" class="insight-banner-img">
+        </div>
+
+        <!-- 2. Video Explainer Container -->
+        <div class="insight-video-box">
+          <div class="insight-video-wrapper">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="INSiGHT Explainer Video | The NXT Chapter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <!-- 3. Core Value Proposition Text Block -->
+        <div class="insight-intro-block">
+          <h2 class="insight-headline">
+            WORK SMARTER.<br>
+            CONNECT DEEPER.
+          </h2>
+          <p class="insight-body-text font-bold">
+            INSiGHT is a safe and effective AI agent system designed specifically for non-profits to automate time-consuming administrative tasks like paperwork, documentation, and content generation. By streamlining daily operations, it frees our team to focus on what matters most, building relationships, having meaningful conversations, and supporting individuals through life's next chapter.
+          </p>
+          <p class="insight-body-text">
+            Rather than replacing people, INSiGHT empowers them by reducing administrative burden and creating more time for human connection, compassionate service, and lasting impact.
+          </p>
+        </div>
+
+        <!-- 4. Infographic Graphic Banner ("What INSiGHT Automates") -->
+        <div class="insight-automates-banner">
+          <img src="assets/INSIGHT Photo Page 2.png" alt="What INSiGHT Automates Infographic" class="insight-automates-img">
+        </div>
+
+        <!-- 5. Pilot Site Application & Newsletter Form Container -->
+        <div class="insight-form-section">
+          <p class="insight-form-lead-text">
+            Sign up for our INSiGHT Newsletter to stay informed about our progress and apply to become one of our pilot sites launching in October.
+          </p>
+
+          <div class="insight-lavender-card">
+            <form id="insight-pilot-form" class="insight-form-grid" onsubmit="handleInsightPilotSubmit(event)">
+              
+              <div class="form-row-2col">
+                <div class="form-group-field">
+                  <label for="insight-fname">First name *</label>
+                  <input type="text" id="insight-fname" class="insight-input" required placeholder="First name">
+                </div>
+                <div class="form-group-field">
+                  <label for="insight-lname">Last name *</label>
+                  <input type="text" id="insight-lname" class="insight-input" required placeholder="Last name">
+                </div>
+              </div>
+
+              <div class="form-row-2col">
+                <div class="form-group-field">
+                  <label for="insight-email">Email *</label>
+                  <input type="email" id="insight-email" class="insight-input" required placeholder="Email address">
+                </div>
+                <div class="form-group-field">
+                  <label for="insight-phone">Phone *</label>
+                  <input type="tel" id="insight-phone" class="insight-input" required placeholder="(720) 555-0199">
+                </div>
+              </div>
+
+              <div class="form-group-field full-width">
+                <label for="insight-org">Organization</label>
+                <input type="text" id="insight-org" class="insight-input" placeholder="Organization name">
+              </div>
+
+              <div class="form-group-field full-width">
+                <label for="insight-notes">Notes</label>
+                <textarea id="insight-notes" class="insight-input" rows="4" placeholder="Tell us about your organization or interest in becoming a pilot site..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-insight-submit">Submit</button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    </div>
+
+    <!-- PAGE 8: ABOUT US -->
+    <div class="page-container" id="page-about">
+      <!-- CLEAN & MODERN ABOUT US PAGE SECTION -->
+      <section class="about-page-clean" id="about">
+        <div class="about-clean-container">
+          
+          <!-- Hero Section: Split Image & Story Header -->
+          <div class="about-hero-grid">
+            <div class="about-photo-wrapper">
+              <img src="assets/NXT Team Photo.png" alt="NXT Chapter Leadership Team" class="about-clean-photo">
+            </div>
+
+            <div class="about-hero-content">
+              <span class="about-purple-tag">ABOUT NXT CHAPTER</span>
+              <h1 class="about-clean-title">Empowering Second Chances. Rebuilding Futures.</h1>
+              <p class="about-lead-text">
+                At NXT Chapter, we are dedicated to supporting individuals through every phase of reentry after incarceration. We provide immediate release stabilization — including assistance with vital state IDs, clothing, hygiene kits, and RTD bus passes — alongside holistic long-term peer mentorship, virtual reality job training, and direct workforce placement.
+              </p>
+              <p class="about-sub-text">
+                Our mission is rooted in second chances, lived experience, and community restoration. Every person deserves the tools, dignity, and opportunities to write their next chapter.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 Core Pillars Section -->
+          <div class="about-pillars-header">
+            <span class="pillars-tag">OUR CORE PILLARS</span>
+            <h2 class="pillars-main-title">Built on Hope, Driven by Impact</h2>
+          </div>
+
+          <div class="about-pillars-grid">
+            
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="9" cy="7" r="4"></circle>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Reentry Stabilization</h3>
+              <p class="pillar-desc">
+                Providing vital ID vouchers, emergency housing assistance, clothing, hygiene essentials, and immediate release support so individuals land on solid ground.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Peer Mentorship</h3>
+              <p class="pillar-desc">
+                Led by individuals with lived experience who understand the journey. Providing 1-on-1 guidance, emotional support, and youth development workshops.
+              </p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="pillar-title">SkillVRse Workforce Placement</h3>
+              <p class="pillar-desc">
+                Cutting-edge Virtual Reality job training, resume building, interview practice, and direct placement with top inclusive employer partners.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Bottom Action Banner -->
+          <div class="about-cta-banner">
+            <div class="about-cta-text">
+              <h2>Ready to Write Your Next Chapter?</h2>
+              <p>Whether you need support, want to refer a participant, or are looking to partner with us, we're here to help.</p>
+            </div>
+            <div class="about-cta-buttons">
+              <a href="#contact" class="btn-clean-primary" onclick="navigateToPage('contact')">Get In Touch</a>
+              <button class="btn-clean-outline" onclick="openModal('mission-modal')">Learn Our Mission</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 9: CONTACT US -->
+    <div class="page-container" id="page-contact">
+<!-- RECREATED CONTACT US PAGE SECTION (EXACT MATCHING DESIGN) -->
+    <section class="contact-page-recreation" id="contact">
+      <div class="contact-outer-container">
+        
+        <!-- White Card Container -->
+        <div class="contact-white-card">
+          
+          <!-- Centered Cyan Main Title -->
+          <h2 class="contact-cyan-title">CONNECT WITH US TODAY</h2>
+
+          <div class="contact-inner-grid">
+            
+            <!-- Left Column: Contact Information -->
+            <div class="contact-details-col">
+              <p class="contact-intro-p">
+                Write us an email if you have any questions or concerns!<br>
+                We'll respond as soon as possible!
+              </p>
+              <p class="contact-expected-response">
+                (Expected Response: 3 - 5 business days)
+              </p>
+
+              <div class="contact-info-block-list">
+                
+                <!-- In Person -->
+                <div class="info-block-item">
+                  <span class="info-icon-purple">📍</span>
+                  <div class="info-text-content">
+                    <span class="info-sub-label">(In Person)</span>
+                    <h4 class="info-main-heading">AID CENTER</h4>
+                    <p class="info-address-line">1370 Elati St Denver, CO 80204</p>
+                    <p class="info-hours-line">Mon. Wed. &amp; Fri. { 10am - 2pm MDT }</p>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="info-block-item align-center">
+                  <span class="info-icon-purple">📞</span>
+                  <div class="info-text-content">
+                    <p class="info-single-line">(720) 301-5458</p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="info-block-item align-center">
+                  <span class="info-icon-purple">✉️</span>
+                  <div class="info-text-content">
+                    <p class="info-single-line"><a href="mailto:nxtchapterorg@gmail.com" class="contact-email-link">nxtchapterorg@gmail.com</a></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Right Column: Interactive Line Form -->
+            <div class="contact-form-col">
+              <form id="contact-page-form" class="contact-lines-form" onsubmit="handleContactPageSubmit(event)">
+                
+                <div class="contact-form-row-2col">
+                  <div class="contact-line-field">
+                    <input type="text" id="contact-page-name" required placeholder="Name" class="contact-line-input">
+                  </div>
+                  <div class="contact-line-field">
+                    <input type="email" id="contact-page-email" required placeholder="Email" class="contact-line-input">
+                  </div>
+                </div>
+
+                <div class="contact-line-field full-width">
+                  <input type="text" id="contact-page-subject" required placeholder="Subject" class="contact-line-input">
+                </div>
+
+                <div class="contact-line-field full-width">
+                  <input type="tel" id="contact-page-phone" required placeholder="Phone" class="contact-line-input">
+                </div>
+
+                <div class="contact-line-field full-width">
+                  <textarea id="contact-page-message" rows="4" required placeholder="Message" class="contact-line-input"></textarea>
+                </div>
+
+                <div class="form-submit-row">
+                  <button type="submit" class="btn-cyan-submit">Submit</button>
+                </div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <!-- FOOTER SECTION (MATCHING REFERENCE DESIGN) -->
+  <footer class="site-footer" id="contact-footer">
+    <div class="container footer-4col-grid">
+      
+      <!-- COL 1: CONTACT US -->
+      <div class="footer-block">
+        <h4 class="footer-block-title">CONTACT US</h4>
+        <div class="footer-block-content">
+          <p>3401 Quebec Suite 9000,</p>
+          <p>Denver, CO 80207</p>
+          <p><a href="mailto:nxtchapter.org@gmail.com" class="footer-text-link">nxtchapter.org@gmail.com</a></p>
+          <p>(720) 301-5458</p>
+        </div>
+      </div>
+
+      <!-- COL 2: CONNECT WITH US -->
+      <div class="footer-block">
+        <h4 class="footer-block-title">CONNECT WITH US</h4>
+        <ul class="footer-simple-links">
+          <li><a href="#" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 3: POLICIES -->
+      <div class="footer-block">
+        <h4 class="footer-block-title">POLICIES</h4>
+        <ul class="footer-simple-links">
+          <li><a href="#policies" onclick="showToast('Terms &amp; Conditions updated for 2025.')">Terms &amp; Conditions</a></li>
+          <li><a href="#policies" onclick="showToast('Privacy Policy: Your data is protected.')">Privacy Policy</a></li>
+          <li><a href="#policies" onclick="showToast('Accessibility Statement: WCAG 2.1 AA compliant.')">Accessibility Statement</a></li>
+        </ul>
+      </div>
+
+      <!-- COL 4: SUBSCRIBE -->
+      <div class="footer-block">
+        <h4 class="footer-block-title subscribe-title">SUBSCRIBE</h4>
+        <form class="subscribe-form" onsubmit="event.preventDefault(); showToast('Thank you for subscribing to NXT Chapter updates!'); this.reset();">
+          <input type="email" class="subscribe-input" placeholder="Email here*" required>
+          <button type="submit" class="subscribe-btn">Join</button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- PURPLE BOTTOM COPYRIGHT BAR -->
+    <div class="footer-copyright-purple-bar">
+      &copy; 2024 by Next Chapter Foundation INC
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+
+  <!-- Youth Registration Modal -->
+  <div class="modal-overlay" id="youth-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('youth-modal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">YOUTH ENROLLMENT</span>
+        <h3 class="modal-title">YOUTH REGISTRATION</h3>
+        <p class="modal-subtitle">Sign up for mentorship, SkillVRse workshops, and youth leadership training (Ages 14-24).</p>
+      </div>
+      <form id="youth-form" onsubmit="handleYouthSubmit(event)">
+        <div class="form-group">
+          <label for="youth-name">Youth Full Name</label>
+          <input type="text" id="youth-name" class="form-input" required placeholder="Jordan Taylor">
+        </div>
+        <div class="form-group">
+          <label for="youth-age">Age</label>
+          <input type="number" id="youth-age" class="form-input" min="14" max="24" required placeholder="17">
+        </div>
+        <div class="form-group">
+          <label for="youth-email">Contact Email / Phone</label>
+          <input type="text" id="youth-email" class="form-input" required placeholder="jordan@example.com or (555) 000-0000">
+        </div>
+        <div class="form-group">
+          <label>Programs Interested In</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="youth-prog" value="SkillVRse"> SkillVRse VR Workshops</label>
+            <label class="checkbox-label"><input type="checkbox" name="youth-prog" value="Mentorship"> 1-on-1 Mentorship</label>
+            <label class="checkbox-label"><input type="checkbox" name="youth-prog" value="Leadership"> Youth Leadership Academy</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">SUBMIT YOUTH REGISTRATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Adult Registration Modal -->
+  <div class="modal-overlay" id="adult-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('adult-modal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">ADULT &amp; REENTRY SERVICES</span>
+        <h3 class="modal-title">ADULT REGISTRATION</h3>
+        <p class="modal-subtitle">Enroll in workforce placement, career training, digital literacy, and reentry support.</p>
+      </div>
+      <form id="adult-form" onsubmit="handleAdultSubmit(event)">
+        <div class="form-group">
+          <label for="adult-name">Full Name</label>
+          <input type="text" id="adult-name" class="form-input" required placeholder="Marcus Vance">
+        </div>
+        <div class="form-group">
+          <label for="adult-phone">Phone Number</label>
+          <input type="tel" id="adult-phone" class="form-input" required placeholder="(720) 555-0199">
+        </div>
+        <div class="form-group">
+          <label for="adult-email">Email Address</label>
+          <input type="email" id="adult-email" class="form-input" placeholder="marcus@example.com">
+        </div>
+        <div class="form-group">
+          <label>Primary Focus</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label"><input type="checkbox" name="adult-focus" value="Job Placement"> Job Placement &amp; Resume Help</label>
+            <label class="checkbox-label"><input type="checkbox" name="adult-focus" value="Reentry"> S.E.E.D Program Reentry Support</label>
+            <label class="checkbox-label"><input type="checkbox" name="adult-focus" value="Housing"> Essential Resources &amp; Housing</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">SUBMIT ADULT REGISTRATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Referral Modal -->
+  <div class="modal-overlay" id="referral-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('referral-modal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">PARTNER &amp; AGENCY PORTAL</span>
+        <h3 class="modal-title">PARTICIPANT REFERRAL</h3>
+        <p class="modal-subtitle">Case workers, probation officers, and community partners can refer individuals directly.</p>
+      </div>
+      <form id="referral-form" onsubmit="handleReferralSubmit(event)">
+        <div class="form-group">
+          <label for="agency-name">Referring Agency / Partner Name</label>
+          <input type="text" id="agency-name" class="form-input" required placeholder="Denver Community Services">
+        </div>
+        <div class="form-group">
+          <label for="client-name">Participant / Client Name</label>
+          <input type="text" id="client-name" class="form-input" required placeholder="Sam Morgan">
+        </div>
+        <div class="form-group">
+          <label for="client-contact">Participant Contact Info</label>
+          <input type="text" id="client-contact" class="form-input" required placeholder="Phone or email">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">SUBMIT REFERRAL</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Donate Modal -->
+  <div class="modal-overlay" id="donate-modal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeModal('donate-modal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">MAKE AN IMPACT</span>
+        <h3 class="modal-title">SUPPORT NXT CHAPTER</h3>
+        <p class="modal-subtitle">Your generous contribution directly funds mentorship, essential resources, and reentry programs.</p>
+      </div>
+      <form id="donate-form" onsubmit="handleDonateSubmit(event)">
+        <div class="donation-tiers">
+          <button type="button" class="tier-btn active" onclick="selectTier(this, 25)">$25</button>
+          <button type="button" class="tier-btn" onclick="selectTier(this, 50)">$50</button>
+          <button type="button" class="tier-btn" onclick="selectTier(this, 100)">$100</button>
+          <button type="button" class="tier-btn" onclick="selectTier(this, 250)">$250</button>
+        </div>
+        <div class="form-group">
+          <label for="custom-amount">Or Custom Amount ($)</label>
+          <input type="number" id="custom-amount" class="form-input" min="5" placeholder="Enter amount">
+        </div>
+        <div class="form-group">
+          <label for="donor-name">Full Name</label>
+          <input type="text" id="donor-name" class="form-input" required placeholder="John Doe">
+        </div>
+        <div class="form-group">
+          <label for="donor-email">Email Address</label>
+          <input type="email" id="donor-email" class="form-input" required placeholder="john@example.com">
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">COMPLETE DONATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Learn Mission Modal -->
+  <div class="modal-overlay" id="mission-modal">
+    <div class="modal-card modal-lg">
+      <button class="modal-close" onclick="closeModal('mission-modal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">OUR CORE PURPOSE</span>
+        <h3 class="modal-title">OUR MISSION &amp; VISION</h3>
+      </div>
+      <div class="modal-body-content">
+        <p><strong>NXT Chapter</strong> exists to remove systemic barriers and build clear pathways for individuals taking their next step toward independence, dignity, and career fulfillment.</p>
+        <h4>Our Core Pillars</h4>
+        <ul>
+          <li><strong>Empowerment Through Education:</strong> Providing practical digital literacy, financial guidance, and career training.</li>
+          <li><strong>Relational Mentorship:</strong> Connecting individuals with caring, experienced mentors who provide guidance and accountability.</li>
+          <li><strong>Systemic Advocacy:</strong> Championing policies and partnerships that create equal opportunities for reentry and youth growth.</li>
+        </ul>
+        <button class="btn btn-outline" onclick="closeModal('mission-modal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our Story Modal -->
+  <div class="modal-overlay" id="story-modal">
+    <div class="modal-card modal-lg">
+      <button class="modal-close" onclick="closeModal('story-modal')">&times;</button>
+      <div class="modal-header">
+        <span class="modal-tag">FOUNDED IN COMMUNITY</span>
+        <h3 class="modal-title">THE NXT CHAPTER STORY</h3>
+      </div>
+      <div class="modal-body-content">
+        <p>Founded in Denver, NXT Chapter started with a simple belief: everyone deserves a second chance and a dedicated support system to help them write their next chapter in life.</p>
+        <p>From local park meetups and informal career workshops, we have grown into a multi-department organization serving over 500+ lives each year with a network of 20+ community partners.</p>
+        <button class="btn btn-primary" onclick="closeModal('story-modal'); openModal('youth-modal');">Get Involved With Us</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
