@@ -5763,7 +5763,7 @@ img {
 }
 
 /* ==========================================================================
-   COMPREHENSIVE MOBILE SMARTPHONE OPTIMIZATION (STRICT MOBILE-ONLY CONTAINMENT)
+   COMPREHENSIVE MOBILE SMARTPHONE OPTIMIZATION (HIGH-END COMPACT SPACING)
    ========================================================================== */
 
 html, body {
@@ -5774,17 +5774,19 @@ html, body {
 
 @media (max-width: 768px) {
   
-  /* Global Container Containment */
-  section, main, .container, .page-container, .hero-section, .home-impact-section {
+  /* 1. Global Container Padding & Side Margins */
+  section, main, .container, .page-container, .hero-section, .home-impact-section, .about-section, .departments-section {
     max-width: 100vw !important;
     width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
     box-sizing: border-box !important;
     overflow-x: hidden !important;
   }
 
-  /* 1. Header Bar & Mobile Hamburger Menu */
+  /* 2. Header Bar & Mobile Hamburger Menu */
   .site-header {
-    padding: 8px 12px !important;
+    padding: 8px 16px !important;
     width: 100vw !important;
     box-sizing: border-box !important;
   }
@@ -5800,16 +5802,14 @@ html, body {
   }
 
   .left-logo .brand-logo-img {
-    height: 32px !important;
+    height: 30px !important;
     width: auto !important;
   }
 
-  /* Hide header purple-capsule-bar on mobile top bar so logo & hamburger fit cleanly */
   .header-actions {
     display: none !important;
   }
 
-  /* Show Hamburger toggle button on mobile top bar */
   .mobile-toggle {
     display: flex !important;
     flex-direction: column !important;
@@ -5821,19 +5821,18 @@ html, body {
   }
 
   .mobile-toggle .bar {
-    width: 24px !important;
+    width: 22px !important;
     height: 2px !important;
     background-color: #FFFFFF !important;
     transition: all 0.3s ease !important;
   }
 
-  /* Mobile Drawer Menu contains links PLUS the Purple Capsule CTA buttons! */
   .main-nav {
     position: fixed !important;
-    top: 60px !important;
+    top: 56px !important;
     left: 0 !important;
     width: 100vw !important;
-    height: calc(100vh - 60px) !important;
+    height: calc(100vh - 56px) !important;
     background: #0B0B14 !important;
     flex-direction: column !important;
     padding: 24px 20px !important;
@@ -5851,12 +5850,12 @@ html, body {
   .nav-list {
     flex-direction: column !important;
     width: 100% !important;
-    gap: 14px !important;
+    gap: 12px !important;
     align-items: flex-start !important;
   }
 
   .nav-link {
-    font-size: 1.1rem !important;
+    font-size: 1.05rem !important;
     padding: 10px 0 !important;
     width: 100% !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -5875,10 +5874,11 @@ html, body {
   .mobile-drawer-cta-group .capsule-btn {
     width: 100% !important;
     padding: 10px 14px !important;
-    font-size: 0.85rem !important;
+    font-size: 0.82rem !important;
     background: rgba(124, 58, 237, 0.25) !important;
     border: 1px solid rgba(124, 58, 237, 0.5) !important;
     text-align: center !important;
+    border-radius: 20px !important;
   }
 
   .mobile-drawer-cta-group .donate-pill-btn {
@@ -5887,9 +5887,9 @@ html, body {
     font-weight: 800 !important;
   }
 
-  /* 2. Top Announcement Banner */
+  /* 3. Top Announcement Banner */
   .top-stronger-together-banner {
-    padding: 6px 10px !important;
+    padding: 6px 14px !important;
     overflow: hidden !important;
     width: 100% !important;
     max-width: 100vw !important;
@@ -5903,13 +5903,13 @@ html, body {
   }
 
   .stronger-together-title-clean {
-    font-size: 0.78rem !important;
+    font-size: 0.76rem !important;
     font-weight: 800 !important;
-    letter-spacing: 0.05em !important;
+    letter-spacing: 0.04em !important;
   }
 
   .single-line-announcement {
-    font-size: 0.72rem !important;
+    font-size: 0.70rem !important;
     line-height: 1.35 !important;
     white-space: normal !important;
     word-break: break-word !important;
@@ -5917,22 +5917,15 @@ html, body {
     text-align: center !important;
   }
 
-  /* 3. Hero Section Re-Ordering on Mobile */
-  /* Re-ordering: 1. Title -> 2. Subtitle ("The NXT Chapter...") -> 3. Photo Carousel -> 4. CTA Buttons */
+  /* 4. Hero Section & Proportioned Typography */
   .hero-section {
-    padding: 24px 16px 40px 16px !important;
-    overflow-x: hidden !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
+    padding: 24px 0 36px 0 !important;
   }
 
   .hero-container {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 0 !important;
     box-sizing: border-box !important;
   }
 
@@ -5944,33 +5937,31 @@ html, body {
 
   .hero-title {
     order: 1 !important;
-    font-size: 1.65rem !important;
-    line-height: 1.25 !important;
     width: 100% !important;
-    max-width: 100% !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
+    margin-bottom: 0 !important;
   }
 
   .hero-title .title-top {
-    font-size: 1.65rem !important;
+    font-size: 1.45rem !important;
     letter-spacing: 0.02em !important;
     display: block !important;
     word-break: break-word !important;
     width: 100% !important;
+    line-height: 1.2 !important;
   }
 
   .hero-title .title-bottom {
-    font-size: 2.45rem !important; /* Enlarged, high-impact tagline! */
+    font-size: 2.05rem !important; /* Scaled cleanly to fit without crowding */
     line-height: 1.15 !important;
     letter-spacing: 0.01em !important;
     display: block !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
     width: 100% !important;
-    max-width: 100% !important;
     color: #00F0FF !important;
-    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4) !important;
+    text-shadow: 0 0 16px rgba(0, 240, 255, 0.35) !important;
     margin-top: 4px !important;
   }
 
@@ -5980,12 +5971,12 @@ html, body {
 
   .hero-subtitle {
     order: 2 !important;
-    font-size: 0.92rem !important;
+    font-size: 0.88rem !important;
     line-height: 1.6 !important;
     width: 100% !important;
-    max-width: 100% !important;
-    margin: 14px 0 16px 0 !important;
+    margin: 12px 0 16px 0 !important;
     word-break: break-word !important;
+    color: #CBD5E1 !important;
   }
 
   .hero-subtitle br {
@@ -5995,7 +5986,7 @@ html, body {
   .hero-image-wrapper {
     order: 3 !important;
     width: 100% !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 18px 0 !important;
   }
 
   .hero-cta-group {
@@ -6010,12 +6001,13 @@ html, body {
     width: 100% !important;
     justify-content: center !important;
     box-sizing: border-box !important;
-    font-size: 0.88rem !important;
-    padding: 14px 18px !important;
+    font-size: 0.84rem !important;
+    padding: 12px 18px !important;
+    border-radius: 12px !important;
   }
 
   .hero-slideshow-container {
-    height: 240px !important;
+    height: 220px !important;
     width: 100% !important;
     max-width: 100% !important;
     border-radius: 14px !important;
@@ -6027,25 +6019,22 @@ html, body {
     display: none !important;
   }
 
-  /* 4. Compact Impact Pill Shapes (No Extra Vertical Dead Space) */
+  /* 5. Compact Impact Pill Shapes (No Extra Vertical Space) */
   .home-impact-section {
-    padding: 44px 16px 60px 16px !important;
-    width: 100% !important;
-    max-width: 100vw !important;
-    box-sizing: border-box !important;
+    padding: 36px 0 48px 0 !important;
   }
 
   .home-impact-header {
-    margin-bottom: 32px !important;
+    margin-bottom: 24px !important;
   }
 
   .home-impact-title {
-    font-size: 2.1rem !important;
+    font-size: 1.95rem !important;
     letter-spacing: 0.04em !important;
   }
 
   .home-impact-intro {
-    font-size: 0.92rem !important;
+    font-size: 0.88rem !important;
     line-height: 1.6 !important;
   }
 
@@ -6054,41 +6043,45 @@ html, body {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    gap: 18px !important;
+    gap: 16px !important;
   }
 
   .impact-pill-card {
     width: 100% !important;
-    max-width: 320px !important;
+    max-width: 290px !important;
     min-height: auto !important;
     height: auto !important;
-    border-radius: 40px !important;
-    padding: 28px 20px 32px 20px !important;
+    border-radius: 28px !important;
+    padding: 22px 18px 26px 18px !important;
     box-sizing: border-box !important;
   }
 
   .pill-stat-circle {
-    width: 100px !important;
-    height: 100px !important;
+    width: 86px !important;
+    height: 86px !important;
     margin-top: 0 !important;
-    margin-bottom: 16px !important;
+    margin-bottom: 12px !important;
   }
 
   .pill-stat-circle .impact-percent {
-    font-size: 2.3rem !important;
+    font-size: 2.0rem !important;
   }
 
   .pill-card-text {
-    font-size: 0.88rem !important;
-    line-height: 1.55 !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
     padding: 0 4px !important;
   }
 
-  /* 5. "GET TO KNOW US" Box Placed Below "OUR MISSION" on Mobile */
+  /* 6. "GET TO KNOW US" Box Placed Below "OUR MISSION" on Mobile */
+  .about-section {
+    padding: 36px 0 !important;
+  }
+
   .about-container {
     display: flex !important;
     flex-direction: column !important;
-    gap: 24px !important;
+    gap: 20px !important;
     padding: 0 !important;
   }
 
@@ -6098,71 +6091,72 @@ html, body {
   }
 
   .about-text-body {
-    font-size: 0.95rem !important;
+    font-size: 0.9rem !important;
     line-height: 1.65 !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
+    margin-bottom: 18px !important;
   }
 
   .about-right {
     order: 2 !important;
     width: 100% !important;
-    margin-top: 8px !important;
+    margin-top: 4px !important;
   }
 
   .know-us-card {
-    transform: none !important; /* Remove rotation tilt on mobile so card fits 100% inside screen */
+    transform: none !important;
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    padding: 28px 18px !important;
-    border-radius: 16px !important;
+    padding: 22px 18px !important;
+    border-radius: 14px !important;
     overflow: hidden !important;
     margin: 0 !important;
   }
 
   .know-us-card .crosshatch-accent {
     position: absolute !important;
-    top: 10px !important;
-    right: 12px !important;
-    font-size: 1.6rem !important;
+    top: 8px !important;
+    right: 10px !important;
+    font-size: 1.4rem !important;
     letter-spacing: 2px !important;
   }
 
   .know-us-title .know-top {
-    font-size: 2.1rem !important;
+    font-size: 1.85rem !important;
   }
 
   .know-us-title .know-bottom {
-    font-size: 2.8rem !important;
+    font-size: 2.45rem !important;
   }
 
   .know-us-desc {
-    font-size: 0.9rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
     word-break: break-word !important;
   }
 
-  /* 6. Split Programs Page (SEED & Youth) */
+  /* 7. Split Programs Page (SEED & Youth) */
   .programs-split-section {
-    padding: 36px 16px !important;
+    padding: 32px 0 !important;
   }
 
   .program-split-row {
     flex-direction: column !important;
-    gap: 16px !important;
+    gap: 14px !important;
   }
 
   .program-hero-card, .program-graphic-card {
-    padding: 24px 16px !important;
-    border-radius: 16px !important;
+    padding: 20px 16px !important;
+    border-radius: 14px !important;
   }
 
   .program-spaced-title {
-    font-size: 1.6rem !important;
+    font-size: 1.45rem !important;
   }
 
-  /* 7. YouTube Embed Video Boxes (SkillVRse & INSiGHT Pages) */
+  /* 8. YouTube Embed Video Boxes (SkillVRse & INSiGHT Pages) */
   .insight-video-wrapper {
     position: relative !important;
     padding-bottom: 56.25% !important;
@@ -6179,36 +6173,46 @@ html, body {
     height: 100% !important;
   }
 
-  /* 8. News & Events 5-Tab Bar Horizontal Scroll */
+  /* 9. News & Events 5-Tab Bar Horizontal Scroll */
   .news-tabs-nav {
     display: flex !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
-    padding-bottom: 8px !important;
-    gap: 8px !important;
+    padding-bottom: 6px !important;
+    gap: 6px !important;
   }
 
   .news-tab-btn {
     flex-shrink: 0 !important;
-    font-size: 0.85rem !important;
-    padding: 8px 14px !important;
+    font-size: 0.82rem !important;
+    padding: 7px 12px !important;
   }
 
-  /* 9. Department Cards Grid */
+  /* 10. Department Cards Grid */
   .departments-grid, .departments-page-grid {
     grid-template-columns: 1fr !important;
-    gap: 14px !important;
+    gap: 12px !important;
   }
 
   .dept-card {
     padding: 18px 14px !important;
+    border-radius: 14px !important;
   }
 
-  /* 10. Forms, Inputs & Modals */
+  .dept-title {
+    font-size: 1.1rem !important;
+  }
+
+  .dept-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* 11. Forms, Inputs & Modals */
   .modal-content {
-    width: 94% !important;
-    padding: 20px 14px !important;
+    width: 92% !important;
+    padding: 18px 14px !important;
     border-radius: 14px !important;
     max-height: 88vh !important;
   }
@@ -6219,7 +6223,7 @@ html, body {
 
   .insight-form-grid {
     grid-template-columns: 1fr !important;
-    gap: 12px !important;
+    gap: 10px !important;
   }
 }
 
