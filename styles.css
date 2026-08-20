@@ -5630,58 +5630,67 @@ img {
 .impact-pills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 36px 24px;
+  max-width: 1140px;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
 }
 
 .impact-pill-card {
-  border-radius: 999px;
-  padding: 52px 32px 64px 32px;
+  width: 100%;
+  max-width: 350px;
+  min-height: 560px;
+  margin: 0 auto;
+  border-radius: 175px;
+  padding: 56px 28px 60px 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   text-align: center;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
   position: relative;
   overflow: hidden;
 }
 
 /* Pill Theme Variations */
 .pill-theme-dark-purple {
-  background: linear-gradient(180deg, #1B172C 0%, #0E0C18 100%);
+  background: linear-gradient(180deg, #1C182A 0%, #0D0B16 100%);
   border: 1.5px solid rgba(124, 58, 237, 0.45);
 }
 
 .pill-theme-dark-teal {
-  background: linear-gradient(180deg, #112824 0%, #0A1614 100%);
+  background: linear-gradient(180deg, #112822 0%, #091714 100%);
   border: 1.5px solid rgba(16, 185, 129, 0.45);
 }
 
 .pill-theme-slate-glow {
-  background: linear-gradient(180deg, #1E293B 0%, #0F172A 100%);
+  background: linear-gradient(180deg, #1A2333 0%, #0B101C 100%);
   border: 1.5px solid rgba(56, 189, 248, 0.4);
 }
 
 .impact-pill-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 60px rgba(124, 58, 237, 0.35), 0 0 30px rgba(0, 240, 255, 0.25);
+  transform: translateY(-12px);
+  box-shadow: 0 35px 70px rgba(124, 58, 237, 0.35), 0 0 35px rgba(0, 240, 255, 0.25);
 }
 
 .pill-stat-circle {
-  width: 140px;
-  height: 140px;
+  width: 136px;
+  height: 136px;
   border-radius: 50%;
-  border: 2.5px solid rgba(255, 255, 255, 0.75);
+  border: 2.5px solid rgba(255, 255, 255, 0.85);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 32px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1);
+  margin-top: 10px;
+  margin-bottom: 36px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.1), 0 8px 24px rgba(0, 0, 0, 0.3);
   transition: transform 0.4s ease;
+  flex-shrink: 0;
 }
 
 .impact-pill-card:hover .pill-stat-circle {
@@ -5690,7 +5699,7 @@ img {
 }
 
 .pill-stat-circle .impact-percent {
-  font-size: 3.4rem;
+  font-size: 3.2rem;
   font-weight: 900;
   color: #FFFFFF;
   line-height: 1;
@@ -5698,11 +5707,11 @@ img {
 }
 
 .pill-card-text {
-  font-size: 0.96rem;
-  line-height: 1.65;
-  color: #E2E8F0;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #CBD5E1;
   font-weight: 400;
-  padding: 0 8px;
+  padding: 0 10px;
 }
 
 .pill-card-text strong {
@@ -5721,8 +5730,10 @@ img {
     grid-template-columns: 1fr;
   }
   .impact-pill-card {
-    border-radius: 60px;
-    padding: 44px 24px;
+    max-width: 320px;
+    min-height: 520px;
+    border-radius: 160px;
+    padding: 44px 20px 48px 20px;
   }
   .home-impact-title {
     font-size: 2.5rem;
