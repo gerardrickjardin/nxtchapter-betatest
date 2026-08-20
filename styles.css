@@ -5763,7 +5763,7 @@ img {
 }
 
 /* ==========================================================================
-   COMPREHENSIVE MOBILE SMARTPHONE OPTIMIZATION (HIGH-END COMPACT SPACING)
+   ULTRA-SEAMLESS iOS & STRIPE-QUALITY MOBILE OPTIMIZATION
    ========================================================================== */
 
 html, body {
@@ -5774,7 +5774,7 @@ html, body {
 
 @media (max-width: 768px) {
   
-  /* 1. Global Container Padding & Side Margins */
+  /* 1. Global Seamless Viewport Containment & 20px Side Margins */
   section, main, .container, .page-container, .hero-section, .home-impact-section, .about-section, .departments-section {
     max-width: 100vw !important;
     width: 100% !important;
@@ -5784,11 +5784,12 @@ html, body {
     overflow-x: hidden !important;
   }
 
-  /* 2. Header Bar & Mobile Hamburger Menu */
+  /* 2. Top Header & Glass Hamburger Navigation Drawer */
   .site-header {
-    padding: 8px 16px !important;
+    padding: 10px 20px !important;
     width: 100vw !important;
     box-sizing: border-box !important;
+    backdrop-filter: blur(16px) !important;
   }
 
   .header-container {
@@ -5802,7 +5803,7 @@ html, body {
   }
 
   .left-logo .brand-logo-img {
-    height: 30px !important;
+    height: 32px !important;
     width: auto !important;
   }
 
@@ -5829,10 +5830,10 @@ html, body {
 
   .main-nav {
     position: fixed !important;
-    top: 56px !important;
+    top: 58px !important;
     left: 0 !important;
     width: 100vw !important;
-    height: calc(100vh - 56px) !important;
+    height: calc(100vh - 58px) !important;
     background: #0B0B14 !important;
     flex-direction: column !important;
     padding: 24px 20px !important;
@@ -5850,13 +5851,13 @@ html, body {
   .nav-list {
     flex-direction: column !important;
     width: 100% !important;
-    gap: 12px !important;
+    gap: 14px !important;
     align-items: flex-start !important;
   }
 
   .nav-link {
-    font-size: 1.05rem !important;
-    padding: 10px 0 !important;
+    font-size: 1.1rem !important;
+    padding: 12px 0 !important;
     width: 100% !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
   }
@@ -5865,20 +5866,20 @@ html, body {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    gap: 8px !important;
-    margin-top: 20px !important;
-    padding-top: 16px !important;
+    gap: 10px !important;
+    margin-top: 24px !important;
+    padding-top: 20px !important;
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
 
   .mobile-drawer-cta-group .capsule-btn {
     width: 100% !important;
-    padding: 10px 14px !important;
-    font-size: 0.82rem !important;
+    padding: 12px 16px !important;
+    font-size: 0.88rem !important;
     background: rgba(124, 58, 237, 0.25) !important;
     border: 1px solid rgba(124, 58, 237, 0.5) !important;
     text-align: center !important;
-    border-radius: 20px !important;
+    border-radius: 999px !important;
   }
 
   .mobile-drawer-cta-group .donate-pill-btn {
@@ -5887,9 +5888,9 @@ html, body {
     font-weight: 800 !important;
   }
 
-  /* 3. Top Announcement Banner */
+  /* 3. Announcement Banner */
   .top-stronger-together-banner {
-    padding: 6px 14px !important;
+    padding: 8px 16px !important;
     overflow: hidden !important;
     width: 100% !important;
     max-width: 100vw !important;
@@ -5903,23 +5904,23 @@ html, body {
   }
 
   .stronger-together-title-clean {
-    font-size: 0.76rem !important;
+    font-size: 0.78rem !important;
     font-weight: 800 !important;
     letter-spacing: 0.04em !important;
   }
 
   .single-line-announcement {
-    font-size: 0.70rem !important;
-    line-height: 1.35 !important;
+    font-size: 0.72rem !important;
+    line-height: 1.4 !important;
     white-space: normal !important;
     word-break: break-word !important;
     display: block !important;
     text-align: center !important;
   }
 
-  /* 4. Hero Section & Proportioned Typography */
+  /* 4. Organic Hero Section Flow */
   .hero-section {
-    padding: 24px 0 36px 0 !important;
+    padding: 28px 0 40px 0 !important;
   }
 
   .hero-container {
@@ -5944,16 +5945,18 @@ html, body {
   }
 
   .hero-title .title-top {
-    font-size: 1.45rem !important;
+    font-size: 1.55rem !important;
+    font-weight: 800 !important;
     letter-spacing: 0.02em !important;
     display: block !important;
     word-break: break-word !important;
     width: 100% !important;
-    line-height: 1.2 !important;
+    line-height: 1.25 !important;
   }
 
   .hero-title .title-bottom {
-    font-size: 2.05rem !important; /* Scaled cleanly to fit without crowding */
+    font-size: 2.25rem !important;
+    font-weight: 900 !important;
     line-height: 1.15 !important;
     letter-spacing: 0.01em !important;
     display: block !important;
@@ -5961,8 +5964,8 @@ html, body {
     overflow-wrap: break-word !important;
     width: 100% !important;
     color: #00F0FF !important;
-    text-shadow: 0 0 16px rgba(0, 240, 255, 0.35) !important;
-    margin-top: 4px !important;
+    text-shadow: 0 0 20px rgba(0, 240, 255, 0.4) !important;
+    margin-top: 6px !important;
   }
 
   .brush-underline {
@@ -5971,10 +5974,10 @@ html, body {
 
   .hero-subtitle {
     order: 2 !important;
-    font-size: 0.88rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
     width: 100% !important;
-    margin: 12px 0 16px 0 !important;
+    margin: 14px 0 20px 0 !important;
     word-break: break-word !important;
     color: #CBD5E1 !important;
   }
@@ -5986,7 +5989,21 @@ html, body {
   .hero-image-wrapper {
     order: 3 !important;
     width: 100% !important;
-    margin: 0 0 18px 0 !important;
+    margin: 0 0 20px 0 !important;
+  }
+
+  .hero-slideshow-container {
+    height: 230px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 20px !important;
+    margin-top: 0 !important;
+    overflow: hidden !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5) !important;
+  }
+
+  .arrow-accent {
+    display: none !important;
   }
 
   .hero-cta-group {
@@ -5994,48 +6011,35 @@ html, body {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    gap: 10px !important;
+    gap: 12px !important;
   }
 
   .hero-cta-group .btn {
     width: 100% !important;
     justify-content: center !important;
     box-sizing: border-box !important;
-    font-size: 0.84rem !important;
-    padding: 12px 18px !important;
-    border-radius: 12px !important;
+    font-size: 0.88rem !important;
+    padding: 14px 20px !important;
+    border-radius: 999px !important;
   }
 
-  .hero-slideshow-container {
-    height: 220px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    border-radius: 14px !important;
-    margin-top: 0 !important;
-    overflow: hidden !important;
-  }
-
-  .arrow-accent {
-    display: none !important;
-  }
-
-  /* 5. Compact Impact Pill Shapes (No Extra Vertical Space) */
+  /* 5. Seamless Impact Pill Capsules */
   .home-impact-section {
-    padding: 36px 0 48px 0 !important;
+    padding: 44px 0 56px 0 !important;
   }
 
   .home-impact-header {
-    margin-bottom: 24px !important;
+    margin-bottom: 28px !important;
   }
 
   .home-impact-title {
-    font-size: 1.95rem !important;
+    font-size: 2.2rem !important;
     letter-spacing: 0.04em !important;
   }
 
   .home-impact-intro {
-    font-size: 0.88rem !important;
-    line-height: 1.6 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.65 !important;
   }
 
   .impact-pills-grid {
@@ -6043,45 +6047,46 @@ html, body {
     flex-direction: column !important;
     align-items: center !important;
     width: 100% !important;
-    gap: 16px !important;
+    gap: 20px !important;
   }
 
   .impact-pill-card {
     width: 100% !important;
-    max-width: 290px !important;
+    max-width: 100% !important;
     min-height: auto !important;
     height: auto !important;
-    border-radius: 28px !important;
-    padding: 22px 18px 26px 18px !important;
+    border-radius: 40px !important;
+    padding: 32px 24px 36px 24px !important;
     box-sizing: border-box !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5) !important;
   }
 
   .pill-stat-circle {
-    width: 86px !important;
-    height: 86px !important;
+    width: 104px !important;
+    height: 104px !important;
     margin-top: 0 !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 18px !important;
   }
 
   .pill-stat-circle .impact-percent {
-    font-size: 2.0rem !important;
+    font-size: 2.4rem !important;
   }
 
   .pill-card-text {
-    font-size: 0.85rem !important;
-    line-height: 1.5 !important;
-    padding: 0 4px !important;
+    font-size: 0.92rem !important;
+    line-height: 1.6 !important;
+    padding: 0 6px !important;
   }
 
-  /* 6. "GET TO KNOW US" Box Placed Below "OUR MISSION" on Mobile */
+  /* 6. Seamless "OUR MISSION" & "GET TO KNOW US" Cards */
   .about-section {
-    padding: 36px 0 !important;
+    padding: 44px 0 !important;
   }
 
   .about-container {
     display: flex !important;
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 24px !important;
     padding: 0 !important;
   }
 
@@ -6091,11 +6096,12 @@ html, body {
   }
 
   .about-text-body {
-    font-size: 0.9rem !important;
-    line-height: 1.65 !important;
+    font-size: 0.95rem !important;
+    line-height: 1.7 !important;
     word-break: break-word !important;
     overflow-wrap: break-word !important;
-    margin-bottom: 18px !important;
+    margin-bottom: 20px !important;
+    color: #CBD5E1 !important;
   }
 
   .about-right {
@@ -6109,60 +6115,64 @@ html, body {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
-    padding: 22px 18px !important;
-    border-radius: 14px !important;
+    padding: 28px 24px !important;
+    border-radius: 24px !important;
     overflow: hidden !important;
     margin: 0 !important;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4) !important;
   }
 
   .know-us-card .crosshatch-accent {
     position: absolute !important;
-    top: 8px !important;
-    right: 10px !important;
-    font-size: 1.4rem !important;
+    top: 14px !important;
+    right: 14px !important;
+    font-size: 1.6rem !important;
     letter-spacing: 2px !important;
   }
 
   .know-us-title .know-top {
-    font-size: 1.85rem !important;
+    font-size: 2.1rem !important;
   }
 
   .know-us-title .know-bottom {
-    font-size: 2.45rem !important;
+    font-size: 2.75rem !important;
   }
 
   .know-us-desc {
-    font-size: 0.86rem !important;
-    line-height: 1.55 !important;
+    font-size: 0.92rem !important;
+    line-height: 1.65 !important;
     word-break: break-word !important;
   }
 
-  /* 7. Split Programs Page (SEED & Youth) */
+  /* 7. Seamless Program & Department Cards */
   .programs-split-section {
-    padding: 32px 0 !important;
+    padding: 40px 0 !important;
   }
 
   .program-split-row {
     flex-direction: column !important;
-    gap: 14px !important;
+    gap: 18px !important;
   }
 
   .program-hero-card, .program-graphic-card {
-    padding: 20px 16px !important;
-    border-radius: 14px !important;
+    padding: 24px 20px !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .program-spaced-title {
-    font-size: 1.45rem !important;
+    font-size: 1.6rem !important;
   }
 
-  /* 8. YouTube Embed Video Boxes (SkillVRse & INSiGHT Pages) */
+  /* 8. Responsive YouTube Video Wrappers */
   .insight-video-wrapper {
     position: relative !important;
     padding-bottom: 56.25% !important;
     height: 0 !important;
     overflow: hidden !important;
-    border-radius: 14px !important;
+    border-radius: 20px !important;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5) !important;
   }
 
   .insight-video-wrapper iframe {
@@ -6173,47 +6183,50 @@ html, body {
     height: 100% !important;
   }
 
-  /* 9. News & Events 5-Tab Bar Horizontal Scroll */
+  /* 9. News & Events 5-Tab Bar */
   .news-tabs-nav {
     display: flex !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
     -webkit-overflow-scrolling: touch !important;
-    padding-bottom: 6px !important;
-    gap: 6px !important;
+    padding-bottom: 8px !important;
+    gap: 8px !important;
   }
 
   .news-tab-btn {
     flex-shrink: 0 !important;
-    font-size: 0.82rem !important;
-    padding: 7px 12px !important;
+    font-size: 0.85rem !important;
+    padding: 8px 16px !important;
+    border-radius: 999px !important;
   }
 
   /* 10. Department Cards Grid */
   .departments-grid, .departments-page-grid {
     grid-template-columns: 1fr !important;
-    gap: 12px !important;
+    gap: 16px !important;
   }
 
   .dept-card {
-    padding: 18px 14px !important;
-    border-radius: 14px !important;
+    padding: 22px 18px !important;
+    border-radius: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
   }
 
   .dept-title {
-    font-size: 1.1rem !important;
+    font-size: 1.15rem !important;
   }
 
   .dept-desc {
-    font-size: 0.85rem !important;
-    line-height: 1.5 !important;
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
   }
 
   /* 11. Forms, Inputs & Modals */
   .modal-content {
     width: 92% !important;
-    padding: 18px 14px !important;
-    border-radius: 14px !important;
+    padding: 24px 20px !important;
+    border-radius: 20px !important;
     max-height: 88vh !important;
   }
 
@@ -6223,7 +6236,7 @@ html, body {
 
   .insight-form-grid {
     grid-template-columns: 1fr !important;
-    gap: 10px !important;
+    gap: 14px !important;
   }
 }
 
